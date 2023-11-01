@@ -1,0 +1,74 @@
+package JavaPratice8.JavaPratice8;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class StreamWithReduceMethod {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Product> productsList = new ArrayList<Product>();  
+		//Adding Products  
+		productsList.add(new Product(1,"HP Laptop",25000f));  
+		productsList.add(new Product(2,"HP Laptop",35000f)); 
+		productsList.add(new Product(3,"Dell Laptop",30000f));  
+		productsList.add(new Product(4,"Lenevo Laptop",28000f)); 
+		productsList.add(new Product(5,"Lenevo Laptop",48000f)); 
+		productsList.add(new Product(6,"Sony Laptop",28000f));  
+		productsList.add(new Product(7,"Apple Laptop",90000f));  
+		// This is more compact approach for filtering data  
+		Float totalPrice = productsList.stream()  
+				.map(product->product.price)  
+				.reduce(0.0f,(sum, price)->sum+price);   // accumulating price  
+		System.out.println(totalPrice);  
+		Double totalPrice3 = productsList.stream()  
+				.collect(Collectors.summingDouble(product->product.price));
+		
+		System.out.println("Sum of the list of prices using streams::"+totalPrice3);
+
+		double res = productsList.stream().collect(Collectors.summingDouble(product->product.price));
+		System.out.println("Sum of the list of prices using streams::"+res);
+		//Max price
+		
+		Product maxPrice = productsList.stream().max((product1,product2)->product1.price>product2.price?1:-1).get();
+		System.out.println("Max price of the list of values in Steam::"+maxPrice.price);
+		
+		Product minPrice = productsList.stream().max((product1,product2)->product1.price<product2.price?1:-1).get();
+		System.out.println("Min price of the list of values in Steam::"+minPrice.price);
+		
+		Product minPrice1 = productsList.stream().min((product1,product2)->product1.price>product2.price?1:-1).get();
+		System.out.println("Min price of the list of values in Steam::"+minPrice1.price);
+		
+		Long count_Stream = productsList.stream().filter(product->product.price>25000).count();
+		System.out.println("Count of the prices in perticular price::"+count_Stream);
+		
+		// Converting the List to Set in Streams collection
+		
+		Set<Float> proSet = productsList.stream().filter(product->product.price>25000).map(product->product.price).collect(Collectors.toSet());
+		System.out.println("Converting the List to Set in Streams::"+proSet);
+		
+		// // Converting the List to map in Streams collection
+		
+		Map<Integer,String> map = productsList.stream().collect(Collectors.toMap(product->product.id, product->product.name));
+		System.out.println("Converting the list to Map::"+map);
+		
+		// References methods in Streams
+		
+		List<String> list1 = productsList.stream().filter(product->product.name.equals("HP Laptop")).map(Product::getName).collect(Collectors.toList());
+		System.out.println("Referring the methods in Strems with name::"+list1);
+		
+		List<Float> list2 = productsList.stream().filter(product->product.price>25000).map(Product::getPrice).collect(Collectors.toList());
+		System.out.println("Referring the methods in Strems with price::"+list2);
+		
+		List<Integer> list3 = productsList.stream().filter(product->product.id == 1).map(Product::getId).collect(Collectors.toList());
+		System.out.println("Referring the methods in Strems with ID::"+list3);
+		
+		
+	}
+
+	
+}

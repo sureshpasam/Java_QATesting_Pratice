@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suiteListener">
+
+    <listeners>
+        <listener class-name="SeleniumPrograms.iSuiteListenerExample"/>
+    </listeners>
+
+    <suite-files>
+        <suite-file path="testSuiteOne1.xml"> </suite-file>
+        <suite-file path="testSuiteOne2.xml"> </suite-file>
+    </suite-files>
+</suite>
+

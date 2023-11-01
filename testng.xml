@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/JavaSeleniumAndWebServices">
+        <classes>
+            <class name="SeleniumPrograms.iSuiteListenerTest1">
+                <methods>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="SeleniumPrograms.iSuiteListenerTest2">
+                <methods>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="SeleniumPrograms.readExcelDataFromTestNG">
+                <methods>
+                    <include name="DataDrivenTest1"/>
+                </methods>
+            </class>
+            <class name="SeleniumPrograms.testNGSelenium">
+                <methods>
+                    <include name="testScript"/>
+                    <include name="testScript1"/>
+                    <include name="testScript2"/>
+                    <include name="TestToFail"/>
+                </methods>
+            </class>
+            <class name="SeleniumPrograms.testNGSeleniumIAnnotationTransfommer">
+                <methods>
+                    <include name="testScript"/>
+                    <include name="testScript1"/>
+                    <include name="testScript2"/>
+                </methods>
+            </class>
+            <class name="SeleniumPrograms.testNGSeleniumIInvokedMethodListeners">
+                <methods>
+                    <include name="testScript"/>
+                    <include name="testScript1"/>
+                    <include name="testScript2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
