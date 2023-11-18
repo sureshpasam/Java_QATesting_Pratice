@@ -1,18 +1,8 @@
 package SeleniumPratice2023;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
 
 public class SeleniumConcepts {
     WebDriver driver;
@@ -45,6 +35,7 @@ public class SeleniumConcepts {
         System.out.println("Navigate to the url");
 
     }
+
 
     public void close() {
         driver.quit();
@@ -106,7 +97,7 @@ public class SeleniumConcepts {
         /*
         //ImplicitWait
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+        // explicit wait
         WebDriverWait wait = new WebDriverWait(driver,30);
         wait.until(ExpectedConditions.alertIsPresent());
         wait.until(ExpectedConditions.elementSelectionStateToBe(By.xpath(""),true));
@@ -152,8 +143,10 @@ public class SeleniumConcepts {
         wait.withTimeout(30000,TimeUnit.MILLISECONDS);
         wait.pollingEvery(10, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("")));
-
-
+// Check box and Radio buttons
+        driver.findElement(By.xpath("")).isSelected();// return boolen value
+        driver.findElement(By.xpath("")).isEnabled();// Return Boolen value
+        driver.findElement(By.xpath("")).isDisplayed();//Boolean value
 */
 
 
