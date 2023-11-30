@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing" parallel="tests" thread-count="3">
+    <test verbose="2" preserve-order="true" name="EdgeBrowser">
+        <classes>
+            <class name="SeleniumPratice2023.TestNG_Pratice"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="ChromeBrowser">
+        <classes>
+            <class name="SeleniumPratice2023.TestNG_Pratice"/>
+        </classes>
+    </test>
+
+</suite>

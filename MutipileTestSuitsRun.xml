@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing with methods parameter" parallel="tests" thread-count="3">
+    <test name="Suit 1">
+        <classes>
+            <class name="SeleniumPratice2023.TestNGGroups">
+                <methods>
+                    <exclude name="tc02VerifyLaunchPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Suit 2">
+        <classes>
+            <class name="SeleniumPratice2023.TestNG_Pratice"/>
+        </classes>
+    </test>
+
+</suite>

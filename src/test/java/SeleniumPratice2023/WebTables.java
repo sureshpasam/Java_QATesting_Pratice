@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -19,8 +20,10 @@ public class WebTables {
         options.addArguments("start-maximized");
         options.setHeadless(false);// headless browser
         // Chrome browser
-        System.setProperty("webdriver.chrome.driver", "C:/Users/sures/Downloads/chromedriver_win32 (2)/chromedriver.exe");
-        driver = new ChromeDriver(options);
+       // System.setProperty("webdriver.chrome.driver", "C:/Users/sures/Downloads/chromedriver_win32 (2)/chromedriver.exe");
+        System.setProperty("webdriver.edge.driver","C:/Users/sures/Downloads/msedgedriver.exe");
+        //driver = new ChromeDriver(options);
+        driver = new EdgeDriver();
 
     }
 

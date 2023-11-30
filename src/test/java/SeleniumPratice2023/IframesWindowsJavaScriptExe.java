@@ -1,12 +1,10 @@
 package SeleniumPratice2023;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.sql.*;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -103,12 +101,12 @@ public class IframesWindowsJavaScriptExe {
     public void Iframes1() {
         driver.manage().window().maximize();
         List<WebElement> list = driver.findElements(By.tagName("iframe"));
-        System.out.println("*********Frames Size***************"+list.size());
-        for (int i =0;i<=list.size();i++){
+        System.out.println("*********Frames Size***************" + list.size());
+        for (int i = 0; i <= list.size(); i++) {
             driver.switchTo().frame(i);
-            int total=driver.findElements(By.xpath("html/body/a/img")).size();
+            int total = driver.findElements(By.xpath("html/body/a/img")).size();
             System.out.println(total);
-            System.out.println("Default content is ::"+driver.switchTo().defaultContent());
+            System.out.println("Default content is ::" + driver.switchTo().defaultContent());
 
 
         }
@@ -117,9 +115,77 @@ public class IframesWindowsJavaScriptExe {
     }
 
     public void allJavaScriptExecutorMethods() {
+        WebElement element = null;
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        //click on any button
+        // js.executeScript("aruguments[0].click();",element);
+        //Getting the Domain name
+        js.executeScript("return document.domain;").toString();
+        System.out.println("Getting the Domain:: " + js.executeScript("return document.domain;"));
+        //Getting the URLS
+        js.executeScript("return document.URL;").toString();
+        System.out.println("Getting the URL:: " + js.executeScript("return document.URL;"));
+
+        // Getting the Title
+        js.executeScript("return document.title;").toString();
+        System.out.println("Getting the Title:: " + js.executeScript("return document.title;"));
+
+        // scroll the element - Vertical scroll down by 600  pixels
+        js.executeScript("window.scrollBy(0,600)");
+        //JavascriptExecutor in Selenium to refresh the browser window
+        // js.executeScript("location.reload()");
+        //JavascriptExecutor in Selenium to send text
+        //js.executeScript("document.getElementById('').value='';");
+        // Generate Alert Pop Window
+        //js.executeScript("alert(‘hello world’);");
+//Get InnerText of a Webpage
+        String sText = js.executeScript("return document.documentElement.innerText;").toString();
+
+/*
+The script can return values. Data types returned are
+
+Boolean
+Long
+String
+List
+WebElement
+
+Syntax:
+JavascriptExecutor js = (JavascriptExecutor) driver;
+js.executeScript(Script,Arguments);
+
+ */
 
     }
 
+    public void DBConnection() throws SQLException, ClassNotFoundException {
+        String DBurl = null;
+        String userName = null;
+        String Password = null;
+        String query = "select * from emp";
+
+        assert false;
+        //Load mysql jdbc driver
+        Class.forName("com.mysql.jdbc.Driver");
+        // Make Connection to the DB using Method
+        Connection connection = DriverManager.getConnection(DBurl,userName,Password);
+        //Create query to the DB Using Statement Object
+        Statement Stmt = connection.createStatement();
+        // Send the query to DB using execute query and store the results in the Result set Object
+        ResultSet resultSet =Stmt.executeQuery(query);
+       /* for (int i =0;i<resultSet.getFetchSize();i++){
+            String getDbValue =resultSet.getString(i);
+        }*/
+
+        while (resultSet.next())
+        {
+            System.out.print(resultSet.getString(1));
+            System.out.print(" " + resultSet.getString(2));
+            System.out.print(" " + resultSet.getString(3));
+            System.out.println(" " + resultSet.getString(4));
+        }
+        connection.close();
+    }
 
     public static void main(String[] args) throws InterruptedException {
         IframesWindowsJavaScriptExe AFWJs = new IframesWindowsJavaScriptExe();
@@ -129,8 +195,10 @@ public class IframesWindowsJavaScriptExe {
 
         //AFWJs.navigate("https://demo.guru99.com/popup.php");// Window popups handles
         // AFWJs.windowHandles();
-        AFWJs.navigate("https://demo.guru99.com/test/guru99home/");// Window popups handles
-        AFWJs.Iframes1();
+        //AFWJs.navigate("https://demo.guru99.com/test/guru99home/");// Window popups handles
+        // AFWJs.Iframes1();
+        AFWJs.navigate("https://demo.guru99.com/V4/");
+        AFWJs.allJavaScriptExecutorMethods();
         AFWJs.close();
 
     }
