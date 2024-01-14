@@ -16,7 +16,7 @@ public class RestApi1 {
 	public static void main(String[] args) throws ClientProtocolException, IOException {
 		// TODO Auto-generated method stub
 		
-		String url = "https://www.mcom-131.tbe.zeus.fds.com/xapi/homepage/v1/canvas";
+		String url = "https://reqres.in/api/users?page=2";
 		HttpUriRequest req = new HttpGet(url);
 		HttpResponse response =  HttpClientBuilder.create().build().execute(req);
 		int code = response.getStatusLine().getStatusCode();
