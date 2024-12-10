@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class RA_Day7 {
     //@Test(priority = 1)
     public void testBasicAuthentication() {
-        given().auth().basic("postman", "password")
+        given().auth().basic("postman", "pass")
                 .when().get("https://postman-echo.com/basic-auth")
                 .then().statusCode(200)
                 .body("authenticated", equalTo(true)).log().all();
@@ -17,7 +17,7 @@ public class RA_Day7 {
 
     // @Test(priority = 2)
     public void testDigestAuthentication() {
-        given().auth().digest("postman", "password")
+        given().auth().digest("postman", "pass")
                 .when().get("https://postman-echo.com/basic-auth")
                 .then().statusCode(200)
                 .body("authenticated", equalTo(true)).log().all();
@@ -26,7 +26,7 @@ public class RA_Day7 {
 
     //@Test(priority = 3)
     public void testPreemtiveAuthentication() {
-        given().auth().preemptive().basic("postman", "password")
+        given().auth().preemptive().basic("postman", "pass")
                 .when().get("https://postman-echo.com/basic-auth")
                 .then().statusCode(200)
                 .body("authenticated", equalTo(true)).log().all();
@@ -37,9 +37,9 @@ public class RA_Day7 {
     //@Test(priority = 4)
     public void testBearerTokenAuthentication() {
 
-        String bearerToken = "";
+        String bT = "";
         given().headers("Accept", "application/vnd.github+json")
-                .headers("Authorization", "Bearer " + bearerToken)
+                .headers("Authorization", "Bearer " + bT)
                 .headers("X-GitHub-Api-Version", "2022-11-28")
                 .when().get("https://api.github.com/user/repos")
                 .then().statusCode(200).log().all();
