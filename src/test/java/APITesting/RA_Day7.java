@@ -37,7 +37,7 @@ public class RA_Day7 {
     //@Test(priority = 4)
     public void testBearerTokenAuthentication() {
 
-        String bearerToken = "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";
+        String bearerToken = "";
         given().headers("Accept", "application/vnd.github+json")
                 .headers("Authorization", "Bearer " + bearerToken)
                 .headers("X-GitHub-Api-Version", "2022-11-28")
@@ -61,7 +61,7 @@ public class RA_Day7 {
    // @Test(priority = 6)
     public void testOAuth2Authentication() {
         given()
-                .auth().oauth2("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")// This is for OAuth1.0 Authentication
+                .auth().oauth2("")// This is for OAuth1.0 Authentication
                 .when().get("https://api.github.com/user/repos")
                 .then().statusCode(200).log().all();
         System.out.println("Successfully authenticated for Oauth2 Token ");
