@@ -14,6 +14,7 @@ public class dropDownExamples {
     dropDownExamples() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\sures\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.MICROSECONDS) ;
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("http://demo.guru99.com/test/newtours/register.php");

@@ -20,7 +20,7 @@ public class java8Pra {
 		listDevs.sort((Developer o1, Developer o2)->o1.getAge()-o2.getAge());
 	
 		//java 8 only, lambda also, to print the List
-		listDevs.forEach((developer)->System.out.println(developer));
+		listDevs.forEach(System.out::println);
 	}
 
 	private static List<Developer> getDevelopers() {

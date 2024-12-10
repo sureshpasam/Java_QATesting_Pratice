@@ -21,7 +21,7 @@ public class compare_Two_List {
 		//list1.add("Raju");
 		*/
 		list1.stream().filter(p->p.contains("RVI=Browse")).forEach(p->System.out.println("adsdg+"+p));
-		list1.stream().forEach(p->System.out.println(p.contains("RVI=Browse")+p));
+		list1.forEach(p->System.out.println(p.contains("RVI=Browse")+p));
 	
 
 	}

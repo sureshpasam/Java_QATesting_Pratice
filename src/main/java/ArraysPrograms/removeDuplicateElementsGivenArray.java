@@ -1,6 +1,7 @@
 package ArraysPrograms;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class removeDuplicateElementsGivenArray {
     public static int removeDuplicateElements(int arr[], int length){
@@ -29,6 +30,13 @@ public class removeDuplicateElementsGivenArray {
         Arrays.sort(arr);//sorting array
         int length = arr.length;
         length = removeDuplicateElements(arr, length);
+
+        HashSet <Integer> set = new HashSet<Integer>();
+        for (int val:arr) {
+            set.add(val);
+            set.stream().sequential();
+        }
+        System.out.println("set"+set);
         //printing array elements
         for (int i=0; i<length; i++)
             System.out.print(arr[i]+" ");

@@ -20,7 +20,7 @@ public class xmlRead {
 
 			DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-			Document doc = docBuilder.parse (new File("C:\\Users\\Nisum\\Desktop\\employee1.xml"));
+			Document doc = docBuilder.parse (new File("C:\\Users\\sures\\Desktop\\emp.xml"));
 			// normalize text representation
 			doc.getDocumentElement ().normalize ();
 			System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());

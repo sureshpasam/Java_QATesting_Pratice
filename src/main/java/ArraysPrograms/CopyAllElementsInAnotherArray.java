@@ -7,7 +7,9 @@ public class CopyAllElementsInAnotherArray {
         for (int i=0;i<arr1.length;i++){
             arr2[i]=arr1[i];
         }
+        System.out.println("000"+arr2);
         for (int i =0;i<arr2.length;i++) {
+
             System.out.println("copying the elements in the one arry to another::"+arr2[i]);
 
         }}

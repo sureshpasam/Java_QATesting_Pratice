@@ -30,7 +30,7 @@ A ≤ B.
     public int solution(int A, int B, int K) {
         int counter = 0;
         int divisiableByElement = 0;
-        ArrayList<Integer> listOfNumbersInBetween = new ArrayList<>();
+        ArrayList<Integer> listOfNumbersInBetween = new ArrayList<Integer>();
 
         for (int i = A; i <= B; i++) {
             listOfNumbersInBetween.add(i);

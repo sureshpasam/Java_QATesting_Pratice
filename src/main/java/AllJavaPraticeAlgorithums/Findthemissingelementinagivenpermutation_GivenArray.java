@@ -31,12 +31,14 @@ each element of array A is an integer within the range [1..(N + 1)].*/
         for (int value : A) {
             totalSum -= value;
         }
-
+        System.out.println("Missing value of the given array::" + (int) totalSum);
+        int aa = (int) (totalSum == 0 ? A.length + 1 : totalSum);
         return (int) (totalSum == 0 ? A.length + 1 : totalSum);
     }
 
+
     public static void main(String[] args) {
-        int[] A = {4, 1, 3};
+        int[] A = {1, 3, 6, 4, 2};
         Findthemissingelementinagivenpermutation_GivenArray ff = new Findthemissingelementinagivenpermutation_GivenArray();
         int B = ff.solution(A);
         System.out.println("Missing value of the given array::" + B);

@@ -6,16 +6,16 @@ public class StringWordsNoOfCount {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*String words = "Suresh India Suresh India";
+		String s = "Suresh India Suresh India";
 		
-		String [] wordsCount  = words.trim().split(" ");
-		System.out.println("count is::"+wordsCount.length);*/
+//		String [] wordsCount  = words.trim().split(" ");
+//		System.out.println("count is::"+wordsCount.length);
 		
-		System.out.println("Enter the string");
-		 
-        Scanner sc = new Scanner(System.in);
- 
-        String s=sc.nextLine();
+//		System.out.println("Enter the string");
+//
+//        Scanner sc = new Scanner(System.in);
+//
+//        String s=sc.nextLine();
  
         int count = 1;
  

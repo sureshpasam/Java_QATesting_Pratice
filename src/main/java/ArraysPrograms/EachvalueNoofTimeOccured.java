@@ -3,9 +3,12 @@ package ArraysPrograms;
 public class EachvalueNoofTimeOccured {
     public void reverseOfTheGivenArray(){
         int [] arr = new int []{1,3,5,4,5,7,5,4,3,6,8,9,0,8,9,0,8};
+        int res =0;
+        int [] r = new int[arr.length];
         for(int i=arr.length-1;i>=0;i--){
-            System.out.println("Reverse of the given array::"+arr[i]);
+            System.out.print(" "+arr[i]);
         }
+
 
     }
     EachvalueNoofTimeOccured() {

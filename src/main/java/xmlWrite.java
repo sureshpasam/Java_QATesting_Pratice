@@ -45,7 +45,7 @@ public class xmlWrite {
 
 	            //write to console or file
 	            StreamResult console = new StreamResult(System.out);
-	            StreamResult file = new StreamResult(new File("C:\\Users\\Nisum\\Desktop\\emp.xml"));
+	            StreamResult file = new StreamResult(new File("C:\\Users\\sures\\Desktop\\emp.xml"));
 
 	            //write data
 	            transformer.transform(source, console);

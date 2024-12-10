@@ -35,12 +35,16 @@ public class NoOfDistrinctValuesInGivenArray {
         // Traverse the input array
         for (int value : A) {
             // If not present, then put it in hashtable and print it
+
             if (!set.contains(value)) {
                 set.add(value);
                 System.out.print(value + " ");
                 count++;
             }
         }
+
+        System.out.println (set);
+
         return count;
     }
 

@@ -21,6 +21,11 @@ public class smallestAndLargestIntegerGivenArray {
         Arrays.sort(arr);
         System.out.println("Array values:::"+ Arrays.toString(arr));
         System.out.println("Second highest value::"+ arr[arr.length-2]);
+        System.out.println(" highest value::"+ arr[arr.length-1]);
+
+        System.out.println("smallest value::"+ arr[0]);
+        System.out.println("smallest second value::"+ arr[1]);
+
         smallestAndLargestIntegerGivenArray s = new smallestAndLargestIntegerGivenArray();
         int [] B=s.solution(A,K);
         System.out.print("dsadas"+ Arrays.toString(B));

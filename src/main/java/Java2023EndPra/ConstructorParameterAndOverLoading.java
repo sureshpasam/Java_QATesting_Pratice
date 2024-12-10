@@ -11,7 +11,7 @@ public class ConstructorParameterAndOverLoading {
         System.out.println("Student No Is " + No + " Student age:  " + age + " Student Name is:: " + name);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ConstructorParameterAndOverLoading con = new ConstructorParameterAndOverLoading(101, "Suresh");
         ConstructorParameterAndOverLoading con1 = new ConstructorParameterAndOverLoading(101, 32, "Suresh");
 

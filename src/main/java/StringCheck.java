@@ -17,8 +17,8 @@ public class StringCheck {
 	         for (int i=0; i<input.length; i++) {
 	 
 	            // Test if next string is a integer
-	 
 	            boolean isInteger = isInteger(input[i]);
+
 	            if (isInteger) {
 	               System.out.println(input[i]+" is an integer");
 	            } else {

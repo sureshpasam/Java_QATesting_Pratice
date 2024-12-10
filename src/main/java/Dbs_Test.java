@@ -8,7 +8,7 @@ public class Dbs_Test{
 			throw new Exc1();
 
 			}catch(Exc0 e0){
-				System.out.println("EX0 caught");
+				System.out.println("EX0 caught"+e0.getMessage());
 				}
 			catch(Exception e){
 				System.out.println("EXeption caught");

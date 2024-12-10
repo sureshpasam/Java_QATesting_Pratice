@@ -21,7 +21,7 @@ public class printDuplicateElementsInTheArray {
 
         }
     }
-    public static void main(String args){
+    public static void main(String[] args){
         printDuplicateElementsInTheArray du = new printDuplicateElementsInTheArray();
         du.reverseOfTheGivenArray();
     }
