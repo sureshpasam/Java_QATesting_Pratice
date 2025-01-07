@@ -12,7 +12,7 @@ import io.restassured.response.Response;
 
 public class RestApi_Example1 {
 
-	@SuppressWarnings("unused")
+
 	@Test
 	public void getDetails() {
 		RestAssured.baseURI ="https://maps.googleapis.com";

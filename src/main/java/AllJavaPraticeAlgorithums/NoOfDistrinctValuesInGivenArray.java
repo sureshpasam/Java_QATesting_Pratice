@@ -43,7 +43,7 @@ public class NoOfDistrinctValuesInGivenArray {
             }
         }
 
-        System.out.println (set);
+        System.out.println ("Set value"+set);
 
         return count;
     }

@@ -3,6 +3,7 @@
 public class StringPermutation {
 	static public void StringPermutation(String input)
     {
+
         StringPermutation("", input);
     }
      
@@ -16,11 +17,11 @@ public class StringPermutation {
         {
             for (int i = 0; i < input.length(); i++)
             {   
-                StringPermutation(permutation+input.charAt(i), input.substring(0, i)+input.substring(i+1, input.length()));
+                StringPermutation(permutation+input.charAt(i), input.substring(0, i)+input.substring(i+1));
             }
         }
     }
-     
+
     public static void main(String[] args) 
     {
         StringPermutation("JSP");

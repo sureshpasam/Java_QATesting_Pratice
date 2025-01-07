@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +24,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -31,8 +33,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.google.common.base.Function;
-
-
+import org.testng.util.TimeUtils;
 
 
 public class Sele {
@@ -41,32 +42,41 @@ public class Sele {
 @Test(alwaysRun=true,expectedExceptions= {IOException.class})
 public <ErrorInResponseException> void Inistallize() throws IOException, InterruptedException {
 	try{
-	 System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/sures/Downloads/chromedriver-win32/chromedriver-win32/chromedriver.exe");
 	 driver = new ChromeDriver();
 	 driver.get("https://www.google.com/");
 	 driver.manage().window().maximize();
+	 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	 TakesScreenshot takesScreenshot = (TakesScreenshot)driver;
 	 File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
 	FileUtils.copyFile(src, new File("C:\\Users\\Desktop\\emplyee2.png"));
 	driver.close();
-	
+
+	// Full lengtht screenshot Java lib
+
+				//Screenshot screenshot = new Ashot().takeScreenshot(driver);
+//		Screenshot s=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+//		ImageIO.write(s.getImage(),"PNG",new File("<< file path>>"));
 
 
-FluentWait<WebDriver> fwait = new FluentWait<WebDriver>(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(2, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
 
-fwait.until(new Function<WebDriver,WebElement>() {
-	public WebElement apply(WebDriver driver) {
-		WebElement ele = driver.findElement(By.xpath(""));
-		if(ele.getText().equals("")) {
-			System.out.println("fluentWait pass");
-			return ele;
 
-		}else {
-			System.out.println("fluentWait Fail");
-			return null;
-		}
-	}
-});
+
+//FluentWait<WebDriver> fwait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(20)).pollingEvery(2, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+
+//fwait.until(new Function<WebDriver,WebElement>() {
+//	public WebElement apply(WebDriver driver) {
+//		WebElement ele = driver.findElement(By.xpath(""));
+//		if(ele.getText().equals("")) {
+//			System.out.println("fluentWait pass");
+//			return ele;
+//
+//		}else {
+//			System.out.println("fluentWait Fail");
+//			return null;
+//		}
+//	}
+//});
 
 
 	 

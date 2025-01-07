@@ -1,19 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
 <suite name="test-parameter">
-
     <test name="TestCase1">
-
         <groups>
             <run>
-                <include name="A" />
+                <include name="A"/>
             </run>
         </groups>
-
         <classes>
             <class
-                    name="SeleniumPratice2023.ParameterizationDataProviderWithITestContext" />
+                    name="SeleniumPratice2023.ParameterizationDataProviderWithITestContext"/>
         </classes>
-
     </test>
 
 
@@ -21,13 +17,13 @@
 
         <groups>
             <run>
-                <include name="B" />
+                <include name="B"/>
             </run>
         </groups>
 
         <classes>
             <class
-                    name="SeleniumPratice2023.ParameterizationDataProviderWithITestContext" />
+                    name="SeleniumPratice2023.ParameterizationDataProviderWithITestContext"/>
         </classes>
 
     </test>

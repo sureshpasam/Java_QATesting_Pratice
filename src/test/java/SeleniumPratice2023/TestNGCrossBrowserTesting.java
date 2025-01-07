@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -26,11 +27,11 @@ public class TestNGCrossBrowserTesting {
                 options.addArguments("start-maximized");
                 options.setHeadless(false);// headless browser
                 // Chrome browser
-                System.setProperty("webdriver.chrome.driver", "C:/Users/sures/Downloads/chromedriver_win32 (2)/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:/Users/sures/Downloads/chromedriver-win32/chromedriver-win32/chromedriver.exe");
                 driver = new ChromeDriver(options);
                 break;
             case "edge":
-                System.setProperty("webdriver.edge.driver", "C:/Users/sures/Downloads/msedgedriver.exe");
+                System.setProperty("webdriver.edge.driver", "C:/Users/sures/Downloads/edgedriver_win32 (1)/msedgedriver.exe");
                 driver = new EdgeDriver();
                 driver.manage().window().maximize();
                 driver.get("https://google.com");

@@ -17,7 +17,7 @@ public class Day8_UpdateUser {
         jsonObject.put("email", faker.internet().emailAddress());
         jsonObject.put("status", "active");
         int id = (int) context.getAttribute("user_id");;
-        String bearerToken = "8d12be1be3bb0ebb8219b46b196bb0c7c6538e63a8fc1c48288f0079718fdda9";
+        String bearerToken = "";
          given().headers("Authorization", "Bearer " + bearerToken)
                 .contentType("application/json")
                 .pathParam("id", id)

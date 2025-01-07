@@ -18,16 +18,19 @@ public class findDupliacateCharactersInString {
             }
 
         }
-        Set<Character> set = baseMap.keySet();
-        for (Character ch1 : set) {
-            if (baseMap.get(ch1) > 1) {
-                System.out.println("Char is duplicate:: " + ch1 + " -" + baseMap.get(ch1) + " Times");
-            } else {
-                System.out.println("Char is ::" + ch1 + "- " + baseMap.get(ch1) + " Times");
+//        Set<Character> set = baseMap.keySet();
+//        for (Character ch1 : set) {
+//            if (baseMap.get(ch1) > 1) {
+//                System.out.println("Char is duplicate:: " + ch1 + " -" + baseMap.get(ch1) + " Times");
+//            } else {
+//                System.out.println("Char is ::" + ch1 + "- " + baseMap.get(ch1) + " Times");
+//
+//            }
+//
+//        }
 
-            }
+                       System.out.println(" Times"+baseMap);
 
-        }
 
     }
 

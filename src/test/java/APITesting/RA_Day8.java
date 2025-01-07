@@ -17,7 +17,7 @@ public class RA_Day8 {
         jsonObject.put("email", faker.internet().emailAddress());
         jsonObject.put("status", "inactive");
 
-        String bearerToken = "8d12be1be3bb0ebb8219b46b196bb0c7c6538e63a8fc1c48288f0079718fdda9";
+        String bearerToken = "";
         int id = given().headers("Authorization", "Bearer " + bearerToken)
                 .contentType("application/json")
                 .body(jsonObject.toString())

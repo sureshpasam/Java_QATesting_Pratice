@@ -1,14 +1,16 @@
 package ArraysPrograms;
 
+import java.util.Arrays;
+
 public class EachvalueNoofTimeOccured {
     public void reverseOfTheGivenArray(){
         int [] arr = new int []{1,3,5,4,5,7,5,4,3,6,8,9,0,8,9,0,8};
-        int res =0;
+        int [] res = new int [arr.length];
         int [] r = new int[arr.length];
         for(int i=arr.length-1;i>=0;i--){
-            System.out.print(" "+arr[i]);
+            r[i] = arr[i];
         }
-
+System.out.print("method"+ Arrays.toString(r));
 
     }
     EachvalueNoofTimeOccured() {

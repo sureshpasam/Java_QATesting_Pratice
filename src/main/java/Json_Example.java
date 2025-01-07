@@ -13,7 +13,7 @@ public class Json_Example {
 
 private static JSONObject JSONObject;
 
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) throws Throwable, Exception {
 		// TODO Auto-generated method stub
 		

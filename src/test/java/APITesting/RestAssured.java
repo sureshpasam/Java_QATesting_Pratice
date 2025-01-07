@@ -19,19 +19,22 @@ public class RestAssured {
 
     @Test(priority = 2)
     public void createUser() {
-        HashMap data = new HashMap();
+        HashMap<String, String> data = new HashMap<>();
         data.put("name", "suresh pasam");
         data.put("job", "Software Engineer");
         id = given().contentType("application/json").body(data)
                 .when().post("https://reqres.in/api/users").jsonPath().getInt("id");
         //.then().statusCode(201).log().all();
+       // Response s = given().contentType("application/json").body(data).when().post("https://reqres.in/api/users");
         System.out.println("Captured the id from the Post call " + id);
+       // System.out.println("Captured the id from the Post call " + s.jsonPath().get());
+
 
     }
 
     @Test(priority = 3, dependsOnMethods = "createUser")
     public void updateUserDeatils() {
-        HashMap data = new HashMap();
+        HashMap<String, String> data = new HashMap<>();
         data.put("name", "suresh");
         data.put("job", "S/W");
         given().contentType("application/json").body(data).when().put("https://reqres.in/api/users/" + id).then().statusCode(200).log().all();

@@ -23,7 +23,7 @@ public class MostRepeatedWordInTextFile {
 	        {
 	            //Creating BufferedReader object
 	             
-	            reader = new BufferedReader(new FileReader("C:\\Users\\Nisum\\Desktop\\sample.txt"));
+	            reader = new BufferedReader(new FileReader("C:\\Users\\sures\\Desktop\\sample.txt"));
 	             
 	            //Reading the first line into currentLine
 	             
@@ -88,7 +88,9 @@ public class MostRepeatedWordInTextFile {
 	            System.out.println("The most repeated word in input file is : "+mostRepeatedWord);
 	             
 	            System.out.println("Number Of Occurrences : "+count);
-	        } 
+				System.out.println("Number Of Occurrences : "+wordCountMap);
+
+			}
 	        catch (IOException e) 
 	        {
 	            e.printStackTrace();

@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class ActionsClass_RightClickEtc {
@@ -27,6 +28,7 @@ public class ActionsClass_RightClickEtc {
     public void navigate() {
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         System.out.println("Successfully navigate the url");
     }
 
@@ -54,6 +56,8 @@ public class ActionsClass_RightClickEtc {
         Thread.sleep(40000);
 
         System.out.println("After mouse over BG color" + td_Home.getCssValue("background-color"));
+       aa.contextClick().doubleClick();
+       aa.doubleClick();
 
         //Methods:
         /*

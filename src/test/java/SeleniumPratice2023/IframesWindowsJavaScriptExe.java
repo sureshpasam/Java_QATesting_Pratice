@@ -65,6 +65,7 @@ public class IframesWindowsJavaScriptExe {
         // To handle all new opened window.
         Set<String> s1 = driver.getWindowHandles();
 
+
         for (String ChildWindow : s1) {
             if (!MainWindow.equalsIgnoreCase(ChildWindow)) {
 

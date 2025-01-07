@@ -19,7 +19,7 @@ WebDriver driver;
 public void dynamicTable(){
     System.setProperty("webdriver.chrome.driver", "C:\\Users\\sures\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
     driver = new ChromeDriver();
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
     driver.manage().window().maximize();
     driver.navigate().to("http://demo.guru99.com/test/web-table-element.php");
    List<WebElement> elecols=driver.findElements(By.xpath("//*[@id=\\\"leftcontainer\\\"]/table/thead/tr/th"));

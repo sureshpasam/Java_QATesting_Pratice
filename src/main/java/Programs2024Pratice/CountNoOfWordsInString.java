@@ -1,7 +1,7 @@
 package Programs2024Pratice;
 
 public class CountNoOfWordsInString {
-    public void CountWords() {
+    public static void CountWords() {
 
         String sentence = "Beauty lies in the eyes of beholder";
         int wordCount = 0;
@@ -13,6 +13,15 @@ public class CountNoOfWordsInString {
             }
         }
         System.out.println("The number of words in the string is: " + wordCount);
+
+        String [] ss = sentence.split(" ");
+        int count =0;
+        for(String ss1 : ss){
+
+            count ++;
+        }
+        System.out.println("count isss=====: " + count);
+
     }
 
     public static void SwappingTwoStrings(){
@@ -29,7 +38,7 @@ public class CountNoOfWordsInString {
 
     public static void main(String[] args) {
        // CountNoOfWordsInString c = new CountNoOfWordsInString();
-        //c.CountWords();
+        CountWords();
         SwappingTwoStrings();
     }
 }

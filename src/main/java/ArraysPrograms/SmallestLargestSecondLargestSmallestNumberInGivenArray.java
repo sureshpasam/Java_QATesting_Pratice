@@ -1,5 +1,7 @@
 package ArraysPrograms;
 
+import java.util.Arrays;
+
 public class SmallestLargestSecondLargestSmallestNumberInGivenArray {
     static int[] arr = new int[]{25, 11, 7, 75, 56, 1, 45, 62, 95, 52, 14};
 
@@ -29,15 +31,16 @@ public class SmallestLargestSecondLargestSmallestNumberInGivenArray {
         for (int value : arr) {
             if (value < small) {
                 small = value;
-                if (value < small) {
+            }else if (value < secondSmallest) {
                     secondSmallest = value;
                 }
 
             }
-        }
+
         System.out.println("Smallest number of the given array::" + small);
         System.out.println("Second Smallest number of the given array::" + secondSmallest);
     }
+
 
     public void sumOfTheArrayElements(int arr[]) {
         int sum = 0;
@@ -58,9 +61,9 @@ public class SmallestLargestSecondLargestSmallestNumberInGivenArray {
                 }
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Ascending order of the elements of the given array::" + arr[i]);
-        }
+
+            System.out.println("Ascending order of the elements of the given array::" + Arrays.toString(arr));
+
         System.out.println("Second largest number of the given array::" + arr[arr.length - 2]);
         System.out.println("Third largest number of the given array::" + arr[arr.length - 3]);
 
@@ -78,9 +81,7 @@ public class SmallestLargestSecondLargestSmallestNumberInGivenArray {
                 }
             }
         }
-        for (int value : arr) {
-            System.out.println("Descending order of the elements of the given array::" + value);
-        }
+            System.out.println("Descending order of the elements of the given array::" + Arrays.toString(arr));
         System.out.println("smallest number of the given array::" + arr[0]);
         System.out.println("Second smallest number of the given array::" + arr[1]);
         System.out.println("Third smallest number of the given array::" + arr[2]);
@@ -98,8 +99,24 @@ public class SmallestLargestSecondLargestSmallestNumberInGivenArray {
 
             }
         }
+
     }
 
+    public static void arraySortAscendingOrderWithOutThirdVaribale() {
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    arr[i] = arr[i] + arr[j];
+                    arr[j] = arr[i] - arr[j];
+                    arr[i] = arr[i] - arr[j];
+                }
+            }
+        }
+
+        System.out.println("Asscending order withour third varibale" + Arrays.toString(arr));
+
+    }
     public static void main(String[] args) {
 
 
@@ -109,6 +126,7 @@ public class SmallestLargestSecondLargestSmallestNumberInGivenArray {
         s1.arraySortAscendingOrder();
         s1.arraySortDescendingOrder();
         s1.displayOddEvenNumbers();
+        arraySortAscendingOrderWithOutThirdVaribale();
     }
 }
 

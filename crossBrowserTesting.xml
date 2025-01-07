@@ -20,13 +20,13 @@
         </classes>
     </test>
 
-    <!--   &lt;!&ndash; <test name="LanuchFirefocBrowser">-->
+    <!--  <test name="LanuchFirefocBrowser">
     <!--        <parameter name="browser" value="firefox" />-->
     <!--        <classes>-->
     <!--            <class name="SeleniumPratice2023.TestNGCrossBrowserTesting">-->
     <!--            </class>-->
     <!--        </classes>-->
 
-    <!--    </test>&ndash;&gt;-->
+    <!--    </test> -->
 
 </suite>

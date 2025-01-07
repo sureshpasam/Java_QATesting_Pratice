@@ -46,25 +46,20 @@ each element of array A is an integer within the range [−1,000,000..1,000,000]
     public int solution(int[] A) {
         int num = 1;
         HashSet<Integer> hset = new HashSet<>();
-
-        for (int j : A) {
-            hset.add(j);
-            if (hset.contains(num)) {
-                num++;
+        while (!hset.contains(num)) {
+            for (int j : A) {
+                hset.add(j);
             }
+            num++;
         }
-
-//        while (hset.contains(num)) {
-//            num++;
-//        }
 
         return num;
     }
 
     public static void main(String[] args) {
         missinInterger m = new missinInterger();
-        //int[] A = {1, 3, 6, 4, 1, 2};
-        int[] A = {2, 1, 1, 2, 3, 1};
+        int[] A = {1,2,6,7,4,3};
+        //int[] A = {1, 3, 6, 4, 2};
         System.out.println("Missing Integer is::" + m.solution(A));
         System.out.println("Missing Integer is soultion 1::" + m.solution1(A));
 

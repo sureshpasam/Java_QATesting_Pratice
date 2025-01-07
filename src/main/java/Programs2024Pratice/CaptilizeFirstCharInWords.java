@@ -4,7 +4,7 @@ public class CaptilizeFirstCharInWords {
 
     CaptilizeFirstCharInWords(String s) {
         String[] words = s.split("\\s");
-        String capUW = "";
+        String capUW = " ";
         for (String w : words) {
             String fcharword = w.substring(0, 1);
             String afterFirChar = w.substring(1);
@@ -16,7 +16,7 @@ public class CaptilizeFirstCharInWords {
     public void CaptilizeLasttCharInWords(String s) {
         String[] words = s.split("\\s");
 
-        String capUW = "";
+        String capUW = " ";
         for (String w : words) {
             String fcharword = w.substring(w.length()-1);
             String afterFirChar = w.substring(0,w.length()-1);
@@ -27,7 +27,7 @@ public class CaptilizeFirstCharInWords {
 
 
     public static void main(String[] args) {
-        CaptilizeFirstCharInWords cap = new CaptilizeFirstCharInWords("suresh pasam ");
+        CaptilizeFirstCharInWords cap = new CaptilizeFirstCharInWords("suresh");
 
         cap.CaptilizeLasttCharInWords("suresh pasam Allur");
 

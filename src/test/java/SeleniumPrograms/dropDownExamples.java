@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
@@ -11,11 +12,13 @@ import java.util.concurrent.TimeUnit;
 
 public class dropDownExamples {
     WebDriver driver;
-    dropDownExamples() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\sures\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
+    public void  dropDownExamples() {
+        System.setProperty("webdriver.chrome.driver", "C:/Users/sures/Downloads/chromedriver-win32/chromedriver-win32/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.MICROSECONDS) ;
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        //System.setProperty("webdriver.edge.driver", "C:/Users/sures/Downloads/edgedriver_win32 (1)/msedgedriver.exe");
+        //driver = new EdgeDriver();
+       // driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.MICROSECONDS) ;
+        driver.manage().timeouts().implicitlyWait(30000, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("http://demo.guru99.com/test/newtours/register.php");
         Select sel = new Select(driver.findElement(By.xpath("*//select[@name='country']")));
@@ -42,7 +45,7 @@ public class dropDownExamples {
     }
 
     public static void main(String args[]) {
-        dropDownExamples drp = new dropDownExamples();
-
+       dropDownExamples dr  = new dropDownExamples();
+       dr.dropDownExamples();
     }
 }

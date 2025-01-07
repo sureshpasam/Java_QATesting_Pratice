@@ -28,7 +28,7 @@ public class MapExample1 {
 	Iterator it = set.iterator();
 	
 	while(it.hasNext()) {
-		@SuppressWarnings("unchecked")
+
 		Map.Entry<Integer, String> m =(Entry<Integer, String>)it.next();
 		System.out.println("key is "+m.getKey() +" Value is "+m.getValue());
 	}

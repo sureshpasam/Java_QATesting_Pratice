@@ -18,6 +18,7 @@ public class lastRepeatedAndNon_Repeated_Characters {
 	                map.put(chr, 1);
 	            }
 	        }
+
 	        //Iterate the string from end to start and return the character for which the count is > 1 in map
 	        for (int i = input.length()-1; i >=0 ; i--) {
 	            if(map.get(input.charAt(i))>1){
@@ -25,7 +26,7 @@ public class lastRepeatedAndNon_Repeated_Characters {
 	                break;
 	            }
 	        }
-	        System.out.println("Last Repeating Character in '"+input+"' is: " + rptChar);
+	        System.out.println("First Repeating Character in '"+input+"' is: " + rptChar);
 	        
 	        for (int i = input.length()-1; i >=0 ; i--) {
 	            if(map.get(input.charAt(i))==1){
