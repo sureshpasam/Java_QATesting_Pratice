@@ -22,7 +22,8 @@ public class ReadExcelData {
 
           // Iterate through each rows one by one t
          
-          Iterator<Row> rowIterator = sheet.iterator(); 
+          Iterator<Row> rowIterator = sheet.iterator();
+
           while (rowIterator.hasNext()) { 
               Row row = rowIterator.next(); 
               // For each row, iterate through all the columns 

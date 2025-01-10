@@ -4,8 +4,8 @@ public class Palindram {
     public static boolean pali(String s) {
         String rev = "";
         char[] ch = s.toCharArray();
-        for (int i = ch.length - 1; i >= 0; i--) {
-            rev = rev + ch[i];
+        for (int i = s.length()-1; i >= 0; i--) {
+            rev = rev + s.charAt(i);
         }
         System.out.println("Reverse of the string " + rev);
 
@@ -21,6 +21,6 @@ public class Palindram {
     }
 
     public static void main(String[] args) {
-        System.out.println(Palindram.pali("nitin"));
+        System.out.println(Palindram.pali("oyo"));
     }
 }

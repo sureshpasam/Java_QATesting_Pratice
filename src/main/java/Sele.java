@@ -46,7 +46,7 @@ public <ErrorInResponseException> void Inistallize() throws IOException, Interru
 	 driver = new ChromeDriver();
 	 driver.get("https://www.google.com/");
 	 driver.manage().window().maximize();
-	 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	 TakesScreenshot takesScreenshot = (TakesScreenshot)driver;
 	 File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
 	FileUtils.copyFile(src, new File("C:\\Users\\Desktop\\emplyee2.png"));

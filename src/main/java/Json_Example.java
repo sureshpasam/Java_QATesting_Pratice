@@ -1,4 +1,3 @@
-package JavaPratice8.JavaPratice8;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

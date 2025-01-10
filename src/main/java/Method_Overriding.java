@@ -1,4 +1,3 @@
-package JavaPratice8.JavaPratice8;
 
 public class Method_Overriding {
 		  void run(){System.out.println("Vehicle is running");}  

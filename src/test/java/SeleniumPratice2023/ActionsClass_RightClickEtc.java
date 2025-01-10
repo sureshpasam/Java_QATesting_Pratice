@@ -27,7 +27,6 @@ public class ActionsClass_RightClickEtc {
 
     public void navigate() {
         driver.get(url);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         System.out.println("Successfully navigate the url");
     }

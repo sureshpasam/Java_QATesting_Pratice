@@ -1,5 +1,6 @@
 package SeleniumPratice2023;
 
+import io.restassured.response.Response;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +10,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import static io.restassured.RestAssured.given;
 
 public class BrokenLinksAndImages {
     WebDriver driver;
@@ -29,7 +33,7 @@ public class BrokenLinksAndImages {
 
     public void navigate() {
         driver.get(url);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         System.out.println("Successfully navigate the url");
     }
 
@@ -58,6 +62,8 @@ public class BrokenLinksAndImages {
         http.connect();
         http.getResponseCode();
         http.getResponseMessage();
+
+        //Response re = given().when().get("url");
 
         if (http.getResponseCode() == 200) {
             System.out.println("Link is valid" + http.getResponseCode()+" Message  "+http.getResponseMessage());
