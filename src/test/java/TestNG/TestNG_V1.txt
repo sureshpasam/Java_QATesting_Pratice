@@ -1,0 +1,21 @@
+#Intriduction:
+Test NG is testing framework inspired from JUnit and NUnit but introducing
+some new functionalities that make it more powerful and easier to use
+
+- Test NG is designed to cover all categories of tests - unit, Functional, End to End , Integration , ectc
+
+# Advantages:
+ Manages test suits and atest cases
+ Helps in prioritizing tests
+ Helps in Groups of tests
+ Paralell execution
+ Reporting
+
+TestSuite --> Test Cases -> Test Steps
+Package -> Classes -> Methods @Test - Test identifying the test method
+
+Order of perticuar :
+@Test(priority=1)
+by Default tests are executed alphabeticable order.
+
+
