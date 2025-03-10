@@ -1,0 +1,21 @@
+
+Just had an interview for a Selenium Java position and wanted
+to share some of the key technical questions I was asked. These
+could be helpful for anyone preparing for a similar role:
+1. Write a program using a for loop with if-else conditions.
+2. Why do we use HashMap? Write a program that uses a
+HashMap with a String as input.
+3. What's the difference between an array and an ArrayList?
+Provide example programs for both.
+4. Explain the difference between inheritance and abstraction.
+Provide example programs for both.
+5. How do you access multiple tabs in a browser? Share a
+sample code for this.
+6. Write a sample feature file for login and logout functionality.
+7. What are the different types of locators? When do you use
+XPath and when do you use CSS selectors?
+8. Explain the framework being used in your project.
+9. When working with an existing framework, and you notice
+50 out of 100 test cases are running slower, what kind of waits
+would you use and why?
+10. How do you resolve conflicts in GitHub?

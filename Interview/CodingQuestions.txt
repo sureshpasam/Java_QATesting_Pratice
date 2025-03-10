@@ -1,0 +1,77 @@
+
+Calling all QA and SDET professionals preparing for interviews at
+top product companies!
+Here's a quick roundup of must-know string-based LeetCode
+problems to sharpen your problem-solving skills:
+Valid Anagram – Check if two strings are anagrams of each
+other.
+Longest Substring Without Repeating Characters - Find the
+length of the longest substring without duplicate characters.
+Implement strStr() – Find the first occurrence of a substring
+within a string.
+Valid Palindrome – Check if a string is a valid palindrome
+(ignoring non-alphanumeric characters).
+Longest Palindromic Substring - Find the longest palindromic
+substring.
+Group Anagrams – Group strings that are anagrams of each
+other.
+Palindrome Partitioning - Partition a string into substrings
+where each is a palindrome.
+Reverse Words in a String - Reverse the order of words in a
+string.
+Longest Common Prefix – Find the longest common prefix
+among a list of strings.
+Minimum Window Substring – Find the smallest substring of s
+containing all characters of t.
+Repeated Substring Pattern - Check if a string can be
+constructed by repeating a substring.
+Check If a String Is a Valid Shuffle of Two Strings – Verify the
+interleaving of two strings.
+Valid Parentheses - Check if parentheses are valid and properly
+closed.
+Remove All Adjacent Duplicates in String - Remove duplicate
+adjacent characters.
+Longest Repeating Character Replacement - Find the length of
+the longest substring after replacing characters.
+Smallest Subsequence of Distinct Characters - Find the
+smallest subsequence of a string with distinct characters.
+Reorganize String - Rearrange a string so that no two adjacent
+characters are the same.
+Substrings of Size K with K Distinct Characters – Count
+substrings of length K with unique characters.
+Wildcard Matching – Match a string with a pattern containing *
+and ?.
+Find All Anagrams in a String - Find all start indices of anagrams
+of a string.
+Distinct Subsequences - Count distinct subsequences of a
+
+Repeated Substring Pattern – Check if a string can be
+constructed by repeating a substring.
+Check If a String Is a Valid Shuffle of Two Strings - Verify the
+interleaving of two strings.
+Valid Parentheses – Check if parentheses are valid and properly
+closed.
+Remove All Adjacent Duplicates in String - Remove duplicate
+adjacent characters.
+Longest Repeating Character Replacement - Find the length of
+the longest substring after replacing characters.
+Smallest Subsequence of Distinct Characters - Find the
+smallest subsequence of a string with distinct characters.
+Reorganize String - Rearrange a string so that no two adjacent
+characters are the same.
+Substrings of Size K with K Distinct Characters - Count
+substrings of length K with unique characters.
+Wildcard Matching - Match a string with a pattern containing *
+and ?.
+Find All Anagrams in a String - Find all start indices of anagrams
+of a string.
+Distinct Subsequences – Count distinct subsequences of a
+string.
+Scramble String – Check if one string is a scrambled version of
+another.
+Check Substring Rotation - Check if one string is a rotation of
+another.
+Custom Sort String - Sort a string based on the order defined
+by another string.
+String Compression - Compress a string using the counts of
+repeated characters.

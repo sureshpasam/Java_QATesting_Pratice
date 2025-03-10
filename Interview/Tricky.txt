@@ -1,0 +1,28 @@
+
+Top Tricky Java questions
+1. Why Java is not 100% Object-oriented
+2. Why pointers are not used in Java
+3. What is JIT compiler in Java
+4. Why String is immutable in java
+5. What is a marker interface
+6. Can you override a private or static method in Java
+7. Does "finally" always execute in Java
+8. How Can You Make a Class Immutable
+9. What is singleton class in Java and how can we make a class
+singleton?
+10. How to break a Singleton pattern
+11. Does Java support multiple inheritances
+12. Can you access a non-static variable in the static context
+13. is it possible to load a class by two ClassLoader
+14. Can you explain how "Inheritance" and "Composition" are
+different
+15. What is the best candidate for the HashMap Key
+16. Can we use a default constructor of a class even if an explicit
+constructor is defined
+17. If two threads have same priority which thread will be
+executed first
+18. Can we serialize static variables in java
+19. What is a deadlock in Java, and how can you create one
+programmatically
+20. Will the 'finally' block execute if you put the return
+statement or System. exit () on the 'try' or 'catch' block?

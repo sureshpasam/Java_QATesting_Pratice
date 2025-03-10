@@ -1,0 +1,30 @@
+ TCS | Expertise in LIMS, ...
+18h.
+QA Automation interview questions from a Capgemini
+1. Write a program to find duplicate elements in a string array.
+2. How would you introduce yourself briefly and effectively?
+3. Explain the framework you have worked with in your
+automation testing process.
+4. How do you handle closing the second window of a browser
+in automation testing?
+5. Differentiate between XPath and CSS selectors.
+6. What is the syntax for a LinkText XPath locator?
+7. What changes or setups do you perform before starting
+execution in your framework?
+8. How do you handle change requests in your application?
+Describe the steps you follow.
+9. How often do you trigger regression test scripts? How do you
+manage them in your repository?
+10. What challenges have you encountered in automation
+testing, and how did you overcome them?
+11. Explain the differences between GET and POST methods in
+API testing.
+12. What are the essential components of the GET and POST
+methods?
+13. Discuss HTTP status codes like 401 and 503.
+14. How do you validate the response code in API testing?
+15. What format do you use for assertions in your tests?
+16. Explain the difference between 200 and 201 HTTP status
+codes.
+17. Provide the syntax for query parameters in API requests.
+Sharing knowledge is the first step toward growth! I hope

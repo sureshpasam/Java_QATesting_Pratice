@@ -1,0 +1,97 @@
+11:10
+X
+Vo
+5G
+LTE
+으이
+40+ Playwright Interview ..
+fdaytalk.com
+Playwright Interview
+Questions with
+Detailed Answers
+1. What is Playwright?
+2. How does Playwright differ from Selenium?
+3. What are the key features of Playwright?
+4. Can you explain the architecture of Playwright?
+5. How do you install Playwright?
+6. What types of tests can you perform using
+Playwright?
+7. How does Playwright handle asynchronous
+operations?
+8. Can you describe how to handle dynamic
+content in Playwright?
+9. What are some common assertions used in
+Playwright?
+10. How do you handle file uploads in Playwright?
+11. Can you explain how to perform mobile testing
+using Playwright?
+12. What are some common exceptions
+encountered while using Playwright?
+13. How do you implement parallel testing in
+Playwright?
+14. Can you explain how network interception works
+in Playwright?
+15. How do you capture screenshots during tests in
+Playwright?
+16. What strategies do you use for handling iframes
+in Playwright?
+Playwright?
+16. What strategies do you use for handling iframes
+in Playwright?
+17. How do you set up test fixtures in Playwright?
+18. Can you describe how to manage dependencies
+between tests using Playwright?
+19. How do you perform data-driven testing using
+Playwright?
+20. What are some best practices when writing
+tests in Playwright?
+21. How can you run tests in headless and headed
+modes in Playwright?
+22. Explain how Playwright handles browser
+contexts and why they are useful.
+23. How do you handle authentication in Playwright
+for repeated tests?
+24. Can you explain how to handle multi-tab or
+pop-up window interactions in Playwright?
+25. How can you simulate geolocation or timezone
+settings in Playwright?
+26. What is the purpose of the expect library in
+Playwright, and how does it work?
+27. Can you describe how to handle API requests
+within Playwright tests?
+28. How do you handle page load performance
+testing in Playwright?
+29. What is auto-waiting in Playwright, and how
+does it affect test stability?
+30. How can you execute JavaScript within the
+browser using Playwright?
+31. Can you describe how to handle keyboard and
+mouse events in Playwright?
+32. How do you deal with browser logs and error
+messages in Playwright?
+27. Can you describe how to handle API requests
+within Playwright tests?
+28. How do you handle page load performance
+testing in Playwright?
+29. What is auto-waiting in Playwright, and how
+does it affect test stability?
+30. How can you execute JavaScript within the
+browser using Playwright?
+31. Can you describe how to handle keyboard and
+mouse events in Playwright?
+32. How do you deal with browser logs and error
+messages in Playwright?
+33. What strategies can you use for debugging tests
+in Playwright?
+34. Can you explain how to mock geolocation in
+Playwright?
+35. How can you test for web accessibility with
+Playwright?
+36. What are trace files in Playwright, and how can
+you use them?
+37. How do you simulate network speed or offline
+mode in Playwright?
+38. Can you describe how to handle browser
+storage in Playwright?
+39. How do you integrate Playwright with CI/CD
+pipelines?

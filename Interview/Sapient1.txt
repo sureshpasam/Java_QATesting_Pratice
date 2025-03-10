@@ -1,0 +1,64 @@
+Publicis Sapient interview questions for #Automation
+
+Selenium is a go-to tool for automation testing, and mastering it
+can make a big difference in interviews. Here's a fresh set of
+scenario-based Selenium questions to challenge your expertise
+and help you prepare:
+Selenium Scenario-Based Questions
+1 Dynamic Dropdowns: How would you select an item from a
+dropdown where options load dynamically as you type?
+2 File Upload: Automate a scenario to upload a file in a form
+where the input type is hidden or disabled.
+3 Pop-ups and Alerts: How would you handle multiple browser
+windows, alerts, and authentication pop-ups using Selenium?
+4 Page Load Timeout: Write logic to wait for a specific
+element to load completely before performing any action.
+5 Stale Element Reference Exception: What is this exception,
+and how would you handle it in a Selenium script?
+6 Screenshot Capture: Write a script to take screenshots only
+when a test case fails.
+7 Mouse Hover: Automate a scenario where you need to hover
+over a menu item to reveal submenus and click one.
+8 Drag and Drop: How would you automate a drag-and-drop
+feature using Selenium WebDriver?
+9 Broken Links: Automate a script to check all links on a
+webpage and identify any broken ones.
+10 Data-Driven Testing: How would you use Selenium to read
+test data from an external source (Excel/CSV) and execute test
+cases?
+Advanced Selenium Questions
+XPath Optimization: How would you handle scenarios where
+IDs and class names are dynamically generated?
+Ajax Elements: Automate a scenario where you need to wait
+for Ajax elements to load dynamically.
+Scroll Actions: Write a script to scroll to the bottom of a
+webpage or a specific element.
+Responsive Testing: How would you validate Ul behavior on
+different screen sizes using Selenium?
+Browser Compatibility: What steps would you take to
+execute a single script across multiple browsers?
+Parallel Execution: How would you configure Selenium to run
+tests in parallel using TestNG or JUnit?
+
+What is polymorphism?
+Exception handling?
+Difference b/w throw and throws?
+What is File in and File out?
+Explain abstract and interface with example.
+WAP for factorial using recursion.
+Automation
+Explain selenium architecture.
+Explain the selenium grid and how to set it up.
+Explain automation framework and its components that you
+have designed.
+Write an XPath of the MakeMyTrip application (provided web
+elements).
+How will you execute multiple test cases at a time?
+Difference b/w Data provider and parameters?
+What is the difference b/w the @BeforeTest and
+@BeforeClass ? How will it work? Give an example.
+What is BDD and its advantages ? Explain BDD cucumber
+architecture.
+QA -
+Difference between Test Plan and Test Strategy ? How to
+create it?

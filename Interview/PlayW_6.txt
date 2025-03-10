@@ -1,0 +1,109 @@
+11:08
+Vo
+LTE
+5G
+playwright interview questions.
+Playwright Interview Questions:
+1. What is Playwright?
+2. What are the key advantages of Playwright
+over Selenium?.
+3. Explain Playwright Architecture.
+4. Explain different types of selectors
+supported by Playwright.
+5. How do you handle different types of waits
+in Playwright?
+6. Why we use async & await in Playwright?
+7. What is the difference between
+page.evaluate and page.context.evaluate?
+8. Explain the concept of page objects in
+Playwright.
+9. How do you handle iframes in Playwright?.
+10. How do you handle authentication pop-ups
+in Playwright?.
+11. Explain how to handle file uploads in
+Playwright?.
+12. How do you perform parallel testing with
+Playwright?.
+13. How do you capture network requests and
+responses in Playwright?.
+14. Explain how to use Playwright for mobile
+emulation.
+15. How do you handle browser permissions in
+Playwright?.
+16. How do you troubleshoot Playwright test
+failures?.
+17. How to increase test timeout in Playwright?.
+18. Can you explain how to select drop down list
+value in Playwright?.
+19. How to verify dropdown list values?.
+20. Can Playwright supports for running same
+tests in multiple environments such as QA,
+Staging, PROD etc.
+21. How to set particular test timeout?.
+22. What is purpose of using codegen in
+Playwright?
+23. How to write more readable tests in
+Playwright?.
+24. Can you explain your current project
+Playwright Automation Framework?.
+25. Explain different types of assertions in
+Playwright?.
+26. How to run tests in headless mode in
+Playwright?.
+27. How to run specific spec file in Playwright?.
+28. How to debug the Playwright test?.
+29. Explain how to overcome strict mode
+violation exception in Playwright?.
+30. How to verify any text on the web page in
+Playwright?.
+31. How do you implement page object model
+in Playwright?
+32. How do you add screenshot & video into
+Playwright Test Report?
+33. Can you explain how to perform Data
+Driven Testing in Playwright?
+34. Explain how do you group tests and run
+tests in Playwright?
+35. How to read environment file properties in
+Playwright?
+36. How do you automatically rerun failed tests
+in Playwright?
+37. Explain HOOKS in Playwright.
+38. How do you perform Mouse actions in
+Playwright?
+37. Explain HOOKS in Playwright.
+38. How do you perform Mouse actions in
+Playwright?
+39. How do you perform Keyboard actions in
+Playwright?
+40. Write a sample code for Drag and Drop in
+Playwright?
+41. How to skip test in Playwright?
+42. Can you explain Visual Testing in
+Playwright?
+43. Explain opening multiple browser sessions
+in Playwright?
+44. Can we generate multiple types of Test
+Report in Playwright?
+45. How to integrate Allure Report with
+Playwright?
+46. Does Playwright supports for API Testing?
+47. Write a sample code for POST, GET API
+requests in Playwright API Testing?
+48. Write a sample code for PUT, PATCH,
+DELETE API requests in Playwright API
+Testing?
+49. How do you pass query parameters in
+Report in Playwright?
+45. How to integrate Allure Report with
+Playwright?
+46. Does Playwright supports for API Testing?
+47. Write a sample code for POST, GET API
+requests in Playwright API Testing?
+48. Write a sample code for PUT, PATCH,
+DELETE API requests in Playwright API
+Testing?
+49. How do you pass query parameters in
+Playwright API Testing?
+50. How to upgrade Playwright to latest stable
+version?

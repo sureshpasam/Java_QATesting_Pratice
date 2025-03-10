@@ -25,9 +25,9 @@ public class OccurenceEachCharGivenString {
 
         Set<Character> set = map.keySet();
         for (Character cc : set) {
-          //  if (map.get(cc) > 1) {
+            if (map.get(cc) > 1) {
                 System.out.println("Character ::" + cc + " value " + map.get(cc));
-           // } else {
+            } //else {
                // System.out.println("Character ::" + cc + " value " + map.get(cc));
            // }
         }

@@ -1,0 +1,39 @@
+Solutions for 6-10 year experience profile
+
+Round 1
+
+1. Introduce yourself
+
+2. I want to execute my Selenium test on a different machine. How can i do that?
+
+3. How can I pass browser name as a argument from Jenkins file to cucumber step definition
+
+4. Which listeners you have used in TestNG?
+
+5. I need a set of code to be executed before only the first scenario in a feature file. How can I do that?
+
+6. Array a = {6,8,11,6,7,18}. Target = 17. Write a program to print the index of any two array elements whose sum-target
+
+7. What are interfaces used for? Give examples of how you have used them.
+
+8. Write xpath of the label named Senior Citizen on SpiceJet UI. (The panel member handed me his laptop to write it)
+
+9. How do you execute your tests on CI/CD pipeline
+
+10. How will you find broken links on web page?
+
+Round 2
+
+1. What is static keyword? What it is used for?
+
+2. What is the use of constructor?
+
+3. Write a program to print the maximum repeated character and minimum repeated character from a string.
+
+4. Write xpath of particular cell based on the value of a neighbouring cell in a webtable.
+
+5. A given text can appear on any cell in a web table. How will you find it?
+
+6. What is dependency injection in rest assured?
+
+7. What is the difference between error code 401 and 403 status code?

@@ -1,0 +1,36 @@
+
+Round 1: (Aptitude and Technical Round Online Test)
+Online aptitude round consists of verbal ability questions,
+and we need to find the output of Java programs. Note: Here
+make sure your webcam and internet connection is proper if it
+disconnects even 1 time, high chances you will be disqualified.
+Round 2: (Technical)
+Shift all even numbers to left side of array and odd number
+to right side.
+Can you create an object of interface / abstract class ?
+Explain.
+Why String is immutable in Java ?
+Purpose of LinkedHashMap in Java? Have you used in
+framework?
+What is invocationCount use in testNg?
+How would you wait for visibility of an element in
+Selenium?
+How would you use AutolT to upload a file.
+What is element Click Intercepted Exception ? How to
+resolve it.
+What are challenges you faced while working with
+framework?
+it.
+What is normalize-space function in xpath ? What is use of
+Round 3: (Technical round)
+What is singleton design pattern in Java ? Advantages of it ?
+How do you disable images in selenium?
+What is difference between Action vs Actions in selenium ?
+Tell me how you deal with elements that change their
+attributes dynamically while running selenium scripts ?
+Purpose of using Thread Local class in Selenium ?
+ΑΡΙ 200, 400, 410, 403 status codes difference.
+How you write test case in postman to validate the status
+code ?
+How would you perform data driven testing in postman?
+Difference between HEAD and OPTIONS API methods?

@@ -1,0 +1,35 @@
+What is Playwright, and how is it different from Selenium?
+What are the main features of Playwright?
+How does Playwright handle browser contexts?
+What are fixtures in Playwright?
+Explain Playwright's auto-wait mechanism.
+How do you handle pop-ups and alerts in Playwright?
+How do you capture screenshots and videos in Playwright?
+What are the advantages of using Playwright over
+Selenium?
+How do you handle dynamic content or elements that
+appear after a delay?
+How do you perform API testing with Playwright?
+How do you perform cross-browser testing with Playwright?
+What is the role of browser.newContext() in Playwright?
+How can you test mobile applications using Playwright?
+How do you execute tests in parallel with Playwright?
+How do you interact with iframes in Playwright?
+How do you handle file uploads and downloads in
+
+How do you perform API testing with Playwright?
+How do you perform cross-browser testing with Playwright?
+What is the role of browser.newContext() in Playwright?
+How can you test mobile applications using Playwright?
+How do you execute tests in parallel with Playwright?
+How do you interact with iframes in Playwright?
+How do you handle file uploads and downloads in
+Playwright?
+Can you explain how to use Playwright's debugging tools?
+How does Playwright integrate with CI/CD pipelines?
+How do you run Playwright tests on a cloud-based service
+(e.g., BrowserStack, Sauce Labs)?
+
+
+
+

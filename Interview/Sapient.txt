@@ -1,0 +1,34 @@
+
+#Interviewquestions from #Sapient | #QA (6-7 yrs)
+1. What are the tools you used in Automation
+2. Which services you have automated
+3. Scenario: Need to Test anybank.com site
+Condition A: test the application hosted in 2 different Regions.
+Condition B: It is SSL Based site, handle SSL.
+Condition C: Need to configure the Proxy for each region.
+Condition D: Using region identifier, identify region.
+Condition E: Utilize the same cookie in every session.
+4. How SSL interacts with browser.
+5. Can we Validate SSL in Selenium Standalone.
+6. What exception will occur if SSL is not validated.
+7. How do you bypass SSL, in selenium standalone.
+8. What is Proxy, will proxy be configured Network level, System
+or Browsers level.
+9. Is there any custom code availed to set proxy in selenium.
+10. What is the information / Metadata stored in Cookies.
+11. Need to mitigate multiple Cookes for multiple pages. Does
+this have any inbuilt functions
+12. How do you initialize driver with all capabilities.
+13. Suppose this suite should be tested in 3 Different platform
+without any changes to code, what is your approach
+14. How you do parallel execution, and its benefits.
+15. What the type of authentication used in API
+16. How Bearer token get validated, how you validated it has
+PUT and GET authorisation
+17. For a PUT, what are all the Status code you can see
+18. Difference between Git Rebase and git merge
+19.How do you maintain local history in GIT
+20. Difference between Pull and Fetch
+21. What is a Constructor, types, can this be inherited
+22. What are different types of exceptions in Java
+23. Write a programme to get null pointer and handle it

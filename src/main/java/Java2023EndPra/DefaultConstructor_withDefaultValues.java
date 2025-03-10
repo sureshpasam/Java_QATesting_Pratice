@@ -8,7 +8,7 @@ public class DefaultConstructor_withDefaultValues {
         System.out.println("Id is:: " + id + " Name is ::" + name);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         DefaultConstructor_withDefaultValues d = new DefaultConstructor_withDefaultValues();
         DefaultConstructor_withDefaultValues d1 = new DefaultConstructor_withDefaultValues();
         d.display();

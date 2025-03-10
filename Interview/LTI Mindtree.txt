@@ -1,0 +1,24 @@
+ LTI Mindtree. I
+
+1. Can you briefly introduce yourself?
+2. What are three OOPS concepts used in your framework?
+Please explain in detail.
+3. What is the difference between ArrayList and LinkedList?
+4. How do POST and PUT methods differ in API testing?
+5. Write a program to count and print the number of 'A's in a
+given string.
+6. What is a Stale Element Exception? Why does it occur, and
+how do you handle it?
+7. Explain 401 and 500 error codes.
+8. What is an Element Not Found Exception? Why does it occur,
+and how do you handle it?
+9. Write a program to find the factorial of a number.
+10. Write a program to reverse a number.
+11. What is the difference between List and Set in Java?
+12. Write a program to count duplicate characters in a string.
+13. Which CI/CD pipeline tools have you used? Can you explain
+your experience with them?
+14. What domain experience do you have in your career so far?
+15. How many team members have you led in your projects?
+16. Can you explain Polymorphism, along with examples of
+Method Overloading and Method Overriding?

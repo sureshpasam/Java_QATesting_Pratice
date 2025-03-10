@@ -1,0 +1,22 @@
+
+UST Global - Automation Test Lead Interview Questions:
+1. What are all the versions of selenium?
+2. Can you please tell the return type of all the elements?
+3. How will you handle dynamics elements?
+4. What is HTTP Methods?
+5. Explain the use of an object repository in Selenium
+(.properties file).
+6. How do you store data in a .properties file?
+7. What is Page Factory in Selenium?
+8. What is the difference between @BeforeClass and
+@BeforeTest in TestNG?
+9. What are the tasks typically written under the @BeforeTest
+annotation?
+10. How can you skip a test case in Cucumber?
+11. How do you rerun failed test cases in TestNG?
+12. How do you group and run test cases in TestNG?
+13. What would you include under the @BeforeSuite
+annotation?
+14. Can you explain the different locators used in Selenium?
+15. What is a collection in Java?
+16. Explain the hierarchy of exceptions in Java.

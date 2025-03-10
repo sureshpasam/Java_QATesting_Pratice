@@ -1,0 +1,879 @@
+
+1. What is Playwright?
+Answer:
+Playwright is an open-source automation framework
+developed by Microsoft that allows developers to
+automate web applications across various browsers
+and platforms. It supports multiple programming
+languages, including JavaScript, TypeScript, Python,
+C#, and Java. Playwright enables end-to-end
+testing by simulating user interactions such as clicks,
+form submissions, and navigation.
+Its key features include multi-browser support
+(Chromium, Firefox, and WebKit), automatic waiting,
+network interception, and the ability to capture
+screenshots and videos during tests. This versatility
+makes it a popular choice for developers looking to
+ensure the functionality and performance of their
+web applications.
+2. How does Playwright
+differ from Selenium?
+Answer: Playwright differs from Selenium in several
+significant ways:
+• Architecture: While Selenium uses the
+WebDriver protocol to communicate with
+browsers, which can introduce latency due to
+HTTP requests, Playwright communicates
+directly with the browser's Dev Tools protocol.
+This results in faster execution and more reliable
+↑
+makes it a popular choice for developers looking to
+ensure the functionality and performance of their
+web applications.
+2. How does Playwright
+differ from Selenium?
+Answer: Playwright differs from Selenium in several
+significant ways:
+• Architecture: While Selenium uses the
+WebDriver protocol to communicate with
+browsers, which can introduce latency due to
+HTTP requests, Playwright communicates
+directly with the browser's Dev Tools protocol.
+This results in faster execution and more reliable
+interactions.
+• Browser Support: Playwright supports multiple
+browsers out of the box (Chromium, Firefox,
+WebKit), whereas Selenium requires additional
+configuration for different browsers.
+• Automatic Waiting: Playwright has built-in
+mechanisms for automatic waiting for elements
+to be ready before performing actions. This
+reduces flakiness in tests compared to Selenium.
+• Modern Features: Playwright supports modern
+web features like Shadow DOM and WebSockets
+natively, allowing for more comprehensive
+testing of contemporary web applications.
+3. What are the key features
+of Playwright?
+Answer: Playwright offers several key features that
+enhance its usability and effectiveness:
+• Cross-Browser Testing: It supports testing
+across Chromium, Firefox, and WebKit with a
+↑
+nativery, allowing тогтоге сотргепensive
+testing of contemporary web applications.
+3. What are the key features
+of Playwright?
+Answer: Playwright offers several key features that
+enhance its usability and effectiveness:
+• Cross-Browser Testing: It supports testing
+across Chromium, Firefox, and WebKit with a
+single API.
+• Multi-Language Support: Playwright can be
+used with various programming languages such
+as JavaScript, Python, C#, and Java.
+• Headless Mode: Tests can run in headless mode
+(without a UI), which is useful for CI/CD
+pipelines.
+• Auto-Waiting: It automatically waits for
+elements to be ready before interacting with
+them, reducing the need for manual wait
+commands.
+• Network Interception: Developers can intercept
+network requests and responses, allowing for
+testing under various conditions.
+• Mobile Emulation: It provides capabilities for
+mobile testing by emulating devices like iPhones
+or Android phones.
+4. Can you explain the
+architecture of Playwright?
+Answer: Playwright's architecture is designed to
+facilitate efficient browser automation. It consists of
+several components:
+• Browser Contexts: Each browser context is an
+isolated environment where tests can run
+↑
+40+ Playwright Interview
+fdaytalk.com
+commands.
+• Network Interception: Developers can intercept
+network requests and responses, allowing for
+testing under various conditions.
+• Mobile Emulation: It provides capabilities for
+mobile testing by emulating devices like iPhones
+or Android phones.
+4. Can you explain the
+architecture of Playwright?
+Answer: Playwright's architecture is designed to
+facilitate efficient browser automation. It consists of
+several components:
+• Browser Contexts: Each browser context is an
+isolated environment where tests can run
+independently. This allows for parallel testing
+without interference between tests.
+• Pages: Each context can contain multiple pages
+(tabs), which represent different views or states
+of a web application.
+• Locators: Playwright uses locators to identify
+elements on a page. These locators can be
+based on CSS selectors, text content, or other
+attributes.
+• API Communication: Instead of relying on
+WebDriver's HTTP requests, Playwright
+communicates directly with the browser via the
+Dev Tools protocol. This direct communication
+enhances performance and reliability.
+5. How do you install
+Playwright?
+↑
+fdaytalk.com
+7. How does Playwright
+handle asynchronous
+operations?
+Answer: Playwright is built on top of JavaScript's
+asynchronous programming model using Promises
+and async/await syntax. This means that when you
+perform actions such as navigating to a page or
+clicking an element, these operations return promises
+that must be awaited before proceeding to the next
+action. For example:
+const { chromium } = require('playwright');
+(async () => {
+const browser = await
+chromium.launch();
+})();
+const page = await browser.newPage();
+await page.goto('https://example.com');
+const title = await page.title();
+console.log(title);
+await browser.close();
+In this example, each action waits for the previous
+one to complete before moving forward.
+8. Can you describe how to
+handle dynamic content in
+Playwright?
+Answer:
+Handling dynamic content in Playwright involves
+waiting for elements to appear or change state
+before interacting with them You can use methods
+In this example, each action waits for the previous
+one to complete before moving forward.
+8. Can you describe how to
+handle dynamic content in
+Playwright?
+Answer:
+Handling dynamic content in Playwright involves
+waiting for elements to appear or change state
+before interacting with them. You can use methods
+like waitForSelector or waitForTimeout to manage
+timing issues effectively:
+await page.waitForSelector('.dynamic-
+element', { state: 'visible' });
+This line ensures that the script waits until the
+specified element is visible on the page before
+proceeding with further actions.
+9. What are some common
+assertions used in
+Playwright?
+Answer:
+Assertions are crucial in validating test outcomes.
+While Playwright itself does not provide built-in
+assertion methods, it integrates seamlessly with
+popular testing frameworks like Jest or Mocha that
+offer assertion capabilities. Common assertions
+include:
+• Visibility Check:
+await expect(element).toBeVisible();
+specified element is visible on the page before
+proceeding with further actions.
+9. What are some common
+assertions used in
+Playwright?
+Answer:
+Assertions are crucial in validating test outcomes.
+While Playwright itself does not provide built-in
+assertion methods, it integrates seamlessly with
+popular testing frameworks like Jest or Mocha that
+offer assertion capabilities. Common assertions
+include:
+• Visibility Check:
+await expect(element).toBeVisible();
+• Text Assertion:
+await
+expect(element).toHaveText('Expected
+Text');
+• Attribute Assertion:
+await
+expect(element).toHaveAttribute('href',
+'https://example.com');
+These assertions help ensure that your application
+behaves as expected during tests.
+10. How do you handle file
+uploads in Playwright?
+↑
+These assertions help ensure that your application
+behaves as expected during tests.
+10. How do you handle file
+uploads in Playwright?
+Answer: To handle file uploads in Playwright, you can
+use the setInputFiles method on file input
+elements:
+const input = await
+page.$('input[type="file"]');
+await
+input.setInputFiles('/path/to/file.txt');
+This code snippet selects a file input element and
+sets it with a specified file path, simulating a user
+uploading a file through the interface.
+11. Can you explain how to
+perform mobile testing using
+Playwright?
+Answer: Playwright provides built-in support for
+mobile device emulation through its devices module.
+You can specify a device configuration when creating
+a new browser context:
+const { devices } = require('playwright');
+const iPhone = devices ['iPhone 11'];
+const context = await
+browser.newContext(iPhone);
+const page = await context.newPage();
+await page.goto('https://example.com');
+This code snippet sets up an emulated environment
+that mimics an iPhone 11's screen size and
+capabilities.
+↑
+fdaytalk.com
+const { devices } = require('playwright');
+const iPhone = devices ['iPhone 11'];
+const context = await
+browser.newContext(iPhone);
+const page = await context.newPage();
+await page.goto('https://example.com');
+This code snippet sets up an emulated environment
+that mimics an iPhone 11's screen size and
+capabilities.
+12. What are some common
+exceptions encountered
+while using Playwright?
+Answer: While working with Playwright, developers
+may encounter various exceptions such as:
+• TimeoutError: Occurs when an operation takes
+longer than expected.
+• ElementNotFoundError: Raised when trying to
+interact with an element that does not exist on
+the page.
+• NavigationError: Triggered when navigation
+fails due to network issues or invalid URLs.
+Handling these exceptions gracefully in your test
+scripts is essential for robust automation.
+13. How do you implement
+parallel testing in
+Playwright?
+Answer: Parallel testing in Playwright can be
+achieved by launching multiple browser contexts or
+13. How do you implement
+parallel testing in
+Playwright?
+Answer: Parallel testing in Playwright can be
+achieved by launching multiple browser contexts or
+instances simultaneously within your test suite. You
+can utilize test runners like Jest or Mocha that
+support parallel execution natively:
+const { chromium } = require('playwright');
+(async () => {
+const browser = await
+chromium.launch();
+// Create multiple contexts
+const context1 = await
+browser.newContext();
+const context2 = await
+browser.newContext();
+// Run tests in parallel across
+contexts
+const page1 = await context1.newPage();
+const page2 = await context2.newPage();
+await Promise.all([
+]);
+page1.goto('https://example.com'),
+page2.goto('https://example.org')
+})();
+await browser.close();
+This approach allows tests to run concurrently across
+different contexts or pages.
+14. Can you explain how
+↑
+14. Can you explain how
+network interception works
+in Playwright?
+Answer: Network interception allows developers to
+monitor and manipulate network requests made by
+their application during tests. You can use
+page.route() to intercept requests:
+await page.route('**/*', (route) => {
+// Modify request if needed
+route.continue(); // Continue with the
+original request
+});
+This capability is useful for mocking responses or
+simulating different server conditions during testing.
+15. How do you capture
+screenshots during tests in
+Playwright?
+Answer: Capturing screenshots is straightforward in
+Playwright using the screenshot() method:
+await page.screenshot({ path:
+'screenshot.png' });
+You can also capture full-page screenshots by
+setting the fullPage option:
+await page.screenshot({ path:
+'fullpage.png', fullPage: true });
+Screenshots are valuable for visual regression testing
+and debugging failed test cases.
+and debugging failed test cases.
+16. What strategies do you
+use for handling iframes in
+Playwright?
+Answer: To interact with iframes in Playwright, you
+first need to get a reference to the iframe's content
+frame using frameLocator() or frame() methods:
+const frame = await page.frame({ name:
+'iframeName' });
+await frame.fill('#inputField', 'Test
+Input');
+This approach allows you to perform actions within
+an iframe just like you would on a regular page.
+17. How do you set up test
+fixtures in Playwright?
+Answer: Test fixtures help manage setup and
+teardown processes consistently across tests. In Jest
+or Mocha (or similar frameworks), you can define
+fixtures using hooks like beforeEach or afterEach:
+beforeEach(async () => {
+context = await browser.newContext();
+page = await context.newPage();
+});
+afterEach(async () => {
+await context.close();
+});
+This structure ensures that each test runs in a fresh
+environment without side effects from previous tests.
+↑
+18. Can you describe how to
+।।।।১ ১০ructure ensures tilat EaCTTLESU TUTIS E১।
+environment without side effects from previous tests.
+18. Can you describe how to
+manage dependencies
+between tests using
+Playwright?
+Answer: Managing dependencies between tests
+typically involves careful design of your test suite
+where each test is independent whenever possible.
+However, if dependencies are unavoidable (e.g.,
+setup data required by subsequent tests), consider
+using global variables or state management
+techniques:
+let sharedData;
+beforeAll(async () => {
+sharedData = await setupData(); //
+Prepare data needed by multiple tests
+});
+test('Test A', async () => {
+expect(await
+});
+getData(sharedData)).toBe(true);
+test('Test B', async () => {
+expect(await
+validateData(sharedData)).toBe(true);
+});
+This ensures that shared data is prepared once but
+used across multiple tests without redundancy.
+19. How do you perform
+data-driven testing using
+Playwright?
+19. How do you perform
+data-driven testing using
+Playwright?
+Answer: Data-driven testing involves running the
+same test logic with different sets of data inputs. You
+can achieve this by parameterizing your tests using
+external data sources such as JSON files or
+databases:
+const testData = require('./data.json');
+testData.forEach(data => {
+=> {
+test('Testing ${data.input}`, async ()
+const result = await
+performAction(data.input);
+expect(result).toBe(data.expectedOutput);
+});
+});
+By iterating over datasets, this approach enhances
+coverage without duplicating code.
+20. What are some best
+practices when writing tests
+in Playwright?
+Answer: To ensure effective automated testing with
+Playwright, consider these best practices:
+• Keep Tests Independent: Each test should run
+independently without relying on others' state.
+• Use Descriptive Names: Name your tests
+clearly so their purpose is immediately
+understood.
+↑
+coverage without duplicating code.
+20. What are some best
+practices when writing tests
+in Playwright?
+Answer: To ensure effective automated testing with
+Playwright, consider these best practices:
+• Keep Tests Independent: Each test should run
+independently without relying on others' state.
+• Use Descriptive Names: Name your tests
+clearly so their purpose is immediately
+understood.
+• Leverage Page Objects: Implement Page
+Object Model (POM) design pattern to
+encapsulate locators and actions related to
+specific pages.
+• Organize Tests Logically: Group related tests
+together based on functionality or feature
+areas.
+• Regularly Update Tests: Keep your test suite
+updated as application changes occur; stale
+tests can lead to false positives/negatives.
+By following these guidelines, you'll create robust and
+maintainable automated tests that effectively
+validate your applications' functionality over time.
+21. How can you run tests in
+headless and headed modes
+in Playwright?
+Answer:
+In Playwright, you can toggle between headless and
+headed modes by setting the headless option when
+↑
+By following these guidelines, you'll create robust and
+maintainable automated tests that effectively
+validate your applications' functionality over time.
+21. How can you run tests in
+headless and headed modes
+in Playwright?
+Answer:
+In Playwright, you can toggle between headless and
+headed modes by setting the headless option when
+launching a browser. Headless mode means the
+browser runs without a visible Ul, which is faster and
+ideal for CI/CD pipelines. Headed mode is useful for
+debugging. For example:
+const { chromium } = require('playwright');
+(async () => {
+const browser = await chromium.launch({
+headless: false }); // Set to true for
+headless mode
+const page = await browser.newPage();
+await page.goto('https://example.com');
+})();
+await browser.close();
+22. Explain how Playwright
+handles browser contexts
+and why they are useful.
+Answer:
+Playwright's browser contexts enable isolated test
+sessions within the same browser instance. Each
+context has its cookies, cache, and storage, allowing
+tests to run independently and in parallel. Browser
+contexts are particularly useful for multi-user
+↑
+22. Explain how Playwright
+handles browser contexts
+and why they are useful.
+Answer:
+Playwright's browser contexts enable isolated test
+sessions within the same browser instance. Each
+context has its cookies, cache, and storage, allowing
+tests to run independently and in parallel. Browser
+contexts are particularly useful for multi-user
+scenarios or when testing applications with isolated
+environments.
+23. How do you handle
+authentication in Playwright
+for repeated tests?
+Answer:
+To handle authentication, you can either use stored
+cookies or network requests. Playwright allows
+saving and loading cookies and storage state, which
+enables you to bypass login for each test. For
+example:
+const { chromium } = require('playwright');
+(async () => {
+const browser = await
+chromium.launch();
+const context = await
+browser.newContext({ storageState:
+'auth.json' });
+contexts are particularly useful for multi-user
+scenarios or when testing applications with isolated
+environments.
+23. How do you handle
+authentication in Playwright
+for repeated tests?
+Answer:
+To handle authentication, you can either use stored
+cookies or network requests. Playwright allows
+saving and loading cookies and storage state, which
+enables you to bypass login for each test. For
+example:
+const { chromium } = require('playwright');
+(async () => {
+const browser = await
+chromium.launch();
+const context = await
+browser.newContext({ storageState:
+'auth.json' });
+const page = await context.newPage();
+await
+page.goto('https://example.com/dashboard');
+})();
+await browser.close();
+Using storageState helps persist authentication
+between tests, speeding up execution.
+24. Can you explain how to
+handle multi-tab or pop-up
+window interactions in
+Plavwright?
+↑
+Using storageState helps persist authentication
+between tests, speeding up execution.
+24. Can you explain how to
+handle multi-tab or pop-up
+window interactions in
+Playwright?
+Answer:
+In Playwright, managing multiple tabs or pop-ups
+involves listening for the page event on the context.
+When a new tab opens, you can control it by storing
+the reference and switching between tabs as needed.
+Example:
+const [popup] = await Promise.all([
+page.waitForEvent('popup'), // Listen
+for popup event
+page.click('a[target="_blank"]') //
+Action that triggers popup
+]);
+await popup.waitForLoadState();
+await popup.goto('https://example.com');
+25. How can you simulate
+geolocation or timezone
+settings in Playwright?
+Answer:
+Playwright allows you to set geolocation and
+timezone for browser contexts. This is useful for
+testing location-based features. For example:
+const context = await browser newContext({
+25. How can you simulate
+geolocation or timezone
+settings in Playwright?
+Answer:
+Playwright allows you to set geolocation and
+timezone for browser contexts. This is useful for
+testing location-based features. For example:
+const context = await browser.newContext({
+geolocation: { latitude: 37.7749,
+longitude: -122.4194},
+timezoneId: 'America/Los_Angeles'
+});
+const page = await context.newPage();
+await
+page.goto('https://maps.example.com');
+26. What is the purpose of
+the expect library in
+Playwright, and how does it
+work?
+Answer:
+The expect library in Playwright provides assertion
+utilities, ensuring the tested web elements or
+conditions match expected values. It's a fundamental
+part of Playwright's test runner, allowing assertions
+like:
+await expect(page).toHaveTitle('Expected
+Page Title');
+26. What is the purpose of
+the expect library in
+Playwright, and how does it
+work?
+Answer:
+The expect library in Playwright provides assertion
+utilities, ensuring the tested web elements or
+conditions match expected values. It's a fundamental
+part of Playwright's test runner, allowing assertions
+like:
+await expect(page).toHaveTitle('Expected
+Page Title');
+await expect(element).toBeVisible();
+The library ensures each test has the expected
+behavior before proceeding.
+27. Can you describe how to
+handle API requests within
+Playwright tests?
+Answer:
+Playwright has built-in support for handling API
+requests with the page.request and route objects.
+You can intercept and mock API requests, which is
+useful for testing without relying on external servers.
+Example:
+await page.route('**/api/v1/users', route
+=> {
+↑
+27. Can you describe how to
+handle API requests within
+Playwright tests?
+Answer:
+Playwright has built-in support for handling API
+requests with the page.request and route objects.
+You can intercept and mock API requests, which is
+useful for testing without relying on external servers.
+Example:
+await page.route('**/api/v1/users', route
+=> {
+route.fulfill({
+contentType: 'application/json',
+body: JSON.stringify({ id: 1, name:
+'John Doe' })
+});
+});
+28. How do you handle page
+load performance testing in
+Playwright?
+Answer:
+To measure page load performance, Playwright can
+capture metrics such as load, DOMContentLoaded,
+and first contentful paint times. Using
+page.evaluate, you can retrieve these metrics for
+analysis:
+const timing = await page.evaluate(() =>
+↑
+ICONsts
+28. How do you handle page
+load performance testing in
+Playwright?
+Answer:
+To measure page load performance, Playwright can
+capture metrics such as load, DOMContentLoaded,
+and first contentful paint times. Using
+page.evaluate, you can retrieve these metrics for
+analysis:
+const timing = await page.evaluate(() =>
+JSON.stringify(window.performance.timing));
+console.log('Page load metrics:', timing);
+This enables monitoring of performance regressions.
+29. What is auto-waiting in
+Playwright, and how does it
+affect test stability?
+Answer:
+Playwright automatically waits for elements to be
+ready before interacting with them, which reduces
+the need for explicit waits and enhances test
+stability. Playwright auto-waits for actions like
+clicks, typing, and navigating, making tests more
+resilient to load time fluctuations.
+30. How can you execute
+JavaScript within the
+This enables monitoring of performance regressions.
+29. What is auto-waiting in
+Playwright, and how does it
+affect test stability?
+Answer:
+Playwright automatically waits for elements to be
+ready before interacting with them, which reduces
+the need for explicit waits and enhances test
+stability. Playwright auto-waits for actions like
+clicks, typing, and navigating, making tests more
+resilient to load time fluctuations.
+30. How can you execute
+JavaScript within the
+browser using Playwright?
+Answer:
+You can run JavaScript in the browser context using
+page.evaluate(). This is helpful for retrieving or
+modifying page data directly. Example:
+const data = await page.evaluate(() =>
+document.title);
+console.log('Page title:', data);
+31. Can you describe how to
+handle keyboard and mouse
+events in Playwright?
+↑
+clicks, typing, and navigating, making tests more
+resilient to load time fluctuations.
+30. How can you execute
+JavaScript within the
+browser using Playwright?
+Answer:
+You can run JavaScript in the browser context using
+page.evaluate(). This is helpful for retrieving or
+modifying page data directly. Example:
+const data = await page.evaluate(() =>
+document.title);
+console.log('Page title:', data);
+31. Can you describe how to
+handle keyboard and mouse
+events in Playwright?
+Answer:
+Playwright provides page.keyboard and page.mouse
+for simulating keyboard and mouse events. For
+instance, page.keyboard.press('Enter') simulates
+pressing Enter, while page.mouse.click(x, y)
+performs a click at specific coordinates.
+32. How do you deal with
+browser logs and error
+messages in Playwright?
+Answer:
+const data = await page.evaluate(() =>
+document.title);
+console.log('Page title:', data);
+31. Can you describe how to
+handle keyboard and mouse
+events in Playwright?
+Answer:
+Playwright provides page.keyboard and page.mouse
+for simulating keyboard and mouse events. For
+instance, page.keyboard.press('Enter') simulates
+pressing Enter, while page.mouse.click(x, y)
+performs a click at specific coordinates.
+32. How do you deal with
+browser logs and error
+messages in Playwright?
+Answer:
+Playwright can capture console logs and errors by
+listening to the console and pageerror events. This
+enables you to log browser messages or errors for
+debugging:
+page.on('console', msg =>
+console.log(msg.text()));
+page.on('pageerror', err =>
+console.error('Page error:', err));
+33. What strategies can you
+use for debugging tests in
+↑
+pertorms a click at specific coordinates.
+32. How do you deal with
+browser logs and error
+messages in Playwright?
+Answer:
+Playwright can capture console logs and errors by
+listening to the console and pageerror events. This
+enables you to log browser messages or errors for
+debugging:
+page.on('console', msg =>
+console.log(msg.text()));
+page.on('pageerror', err =>
+console.error('Page error:', err));
+33. What strategies can you
+use for debugging tests in
+Playwright?
+Answer:
+Debugging in Playwright can be done by running tests
+in headed mode, using page.pause() for interactive
+debugging, and setting slowMo in the browser launch
+options to slow down operations:
+const browser = await chromium.launch({
+headless: false, slowMo: 100 });
+This helps observe each step during test execution.
+34. How can you take video
+recordings of test executions
+33. What strategies can you
+use for debugging tests in
+Playwright?
+Answer:
+Debugging in Playwright can be done by running tests
+in headed mode, using page.pause() for interactive
+debugging, and setting slowMo in the browser launch
+options to slow down operations:
+const browser = await chromium.launch({
+headless: false, slowMo: 100 });
+This helps observe each step during test execution.
+34. How can you take video
+recordings of test executions
+in Playwright?
+Answer:
+Playwright can record videos by enabling
+recordVideo in the browser context options. Videos
+are saved for later review:
+const context = await browser.newContext({
+});
+recordVideo: { dir: './videos/' }
+35. Can you explain how to
+mock geolocation in
+Playwright?
+↑
+This helps observe each step during test execution.
+34. How can you take video
+recordings of test executions
+in Playwright?
+Answer:
+Playwright can record videos by enabling
+recordVideo in the browser context options. Videos
+are saved for later review:
+const context = await browser.newContext({
+});
+recordVideo: { dir: './videos/' }
+35. Can you explain how to
+mock geolocation in
+Playwright?
+Answer:
+Mocking geolocation in Playwright involves setting
+geolocation coordinates in the browser context. This
+is useful for testing applications that rely on location
+data.
+36. How can you test for web
+accessibility with
+Playwright?
+Answer:
+Playwright doesn't provide built-in accessibility
+↑
+36. How can you test for web
+accessibility with
+Playwright?
+Answer:
+Playwright doesn't provide built-in accessibility
+testing, but you can integrate third-party libraries
+like axe-core for accessibility checks within tests.
+37. What are trace
+files in Playwright, and
+how can you use
+them?
+Answer:
+Trace files record a snapshot of each test step and its
+interactions, useful for post-test analysis. Enable
+tracing with:
+await context.tracing.start({ screenshots:
+true, snapshots: true });
+await context.tracing.stop({ path:
+'trace.zip' });
+38. How do you simulate
+network speed or offline
+mode in Playwright?
+Answer:
+38. How do you simulate
+network speed or offline
+mode in Playwright?
+Answer:
+To simulate network conditions, use
+page.emulateNetworkConditions to mimic slow or
+offline networks.
+39. Can you describe how to
+handle browser storage in
+Playwright?
+Answer:
+Playwright allows you to save and load local and
+session storage states to maintain continuity across
+tests. This is particularly helpful for login persistence.
+40. How do you integrate
+Playwright with CI/CD
+pipelines?
+Answer:
+Integrating Playwright with CI/CD involves setting up
+Playwright in the Cl environment, configuring the
+necessary environment variables, and running
+headless tests.
+
+↑

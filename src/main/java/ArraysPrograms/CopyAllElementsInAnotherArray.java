@@ -12,7 +12,7 @@ public class CopyAllElementsInAnotherArray {
         System.out.println("000"+ Arrays.toString(arr2));
        }
         public void CopyAllElementsInAnotherArrayString(){
-            String[] arr1= new String[]{"Suresh","Chaitu","lakshmi"};
+            String[] arr1= {"Suresh","Chaitu","lakshmi"};
             String[] arr2= new String[arr1.length];
             System.arraycopy(arr1, 0, arr2, 0, arr1.length);
                 System.out.println("copying the elements in the one arry to another::"+Arrays.toString(arr2));

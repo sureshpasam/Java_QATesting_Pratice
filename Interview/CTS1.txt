@@ -1,0 +1,23 @@
+
+I previously had the opportunity to interview with Cognizant.
+Here are some of the questions I was asked during the
+interview for 6-8 years of experience in testing role.
+1. Explain Method Overloading and Method Overriding.
+2. Can a static method be overloaded? If yes or no, explain.
+3. Can a static method be overridden? If yes or no, explain.
+4. Explain basic concepts of OOPs.
+5.How does polymorphism work in Java?
+6. What does an interface do? Why do we need an interface?
+7. Difference between List and Set?
+8. Have you ever used Functional Interface? What is Lambda
+expression?
+9. Explain different types of testing.
+10. Explain Regression testing and Smoke testing.
+11. Explain PUT and POST.
+12. How does an API work? You make a call to another service.
+How does the call reach that service? We pass a URL, but how
+does the URL know where the server is located?
+13. What is POM?
+14. How do you decide whether a particular test case is a
+candidate for manual testing or automation testing?
+15. Explain equals() and == in Java.

@@ -1,0 +1,37 @@
+
+#Infosys Interview
+: 6+ years
+Round 1: (Technical)
+: Tell me about your roles and responsibilities in Project.
+: Have you created framework from scratch? Explain
+architecture.
+: Which design pattern you have used in framework ?
+: Difference between Comparable and Comparator ?
+: What are cases where you will use finally block ?
+: What is 3 Amigos ?
+: Difference between Scrum and Kanban
+: Smoke VS Sanity Testing, Regression vs Retesting.
+: In TestNg how will you ensure that screenshots will be
+taken only for fail test cases.
+: How to perform data driven testing in postman ?
+: What are the important validation you will put on a API.
+: Suppose you have 200 test case and 49 test failed, how
+would you collect the data of only failed test cases in testNg.
+Best way?
+: What is maven surefire plugin?
+Round 2 (Technical)
+: Explain how do you pick which test cases to automate ?
+: Write code to find Broken Links in Selenium
+: How to you handle multiple frames ?
+: You have 10 links how will you print title of each link using
+selenium. Give Optimal approach
+: In what cases we need to use implicit / explicit wait
+: What is null pointer exception.
+: Follow up question (check question 3), how would you
+switch to parent frame.
+: Difference between driver.get() vs driver.navigate().to()
+: How to handle Location popup in selenium?
+: How to handle dynamic dropdowns in Selenium ?
+: default vs public access modifier.
+: What is method hiding in Java ?
+: Write Java code to print all the array elements that appears

@@ -20,6 +20,23 @@ public class ArrayMovesLeftRightZeroEvenOddPost {
 
 
     }
+    public static void MovesZeroRight(int [] arr, int j,int temp){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]!=0){  //i=0 =zero, it =1 one
+                if(i!=j){
+                    temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+                j++;
+            }
+
+
+        }
+        System.out.println("Moved the zero right:: "+ Arrays.toString(arr));
+
+
+    }
 
 
     public static void PostLeft(int [] arr, int j,int temp){
@@ -41,7 +58,7 @@ public class ArrayMovesLeftRightZeroEvenOddPost {
     }
 
     public static void EvenLeft(int [] arr, int j,int temp){
-        for(int i=0;i<arr.length    ;i++){
+        for(int i=0;i<arr.length;i++){
             if(arr[i]%2==0){  //i%2==0-> Even and i%2!=0->Odd
                 if(i!=j){
                     temp=arr[i];
@@ -88,6 +105,7 @@ public class ArrayMovesLeftRightZeroEvenOddPost {
         PostLeft(arr1,j,temp);
         EvenLeft(arr2,j,temp);
         inserArrElement(arr3);
+        MovesZeroRight(arr,j,temp);
 
 
 

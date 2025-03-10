@@ -22,11 +22,17 @@ public class LowercaseStringUppercaseTOString {
 
     public static void UpperToLower(String input) {
         char[] c = input.toCharArray();
-        for (int i = 0; i < c.length; i++) {
-            if (c[i]>='A' && c[i]<='Z') {
-                c[i] = (char) (c[i] + 32);
-            }
 
+        for(int i=0;i<input.length();i++){
+            if (input.charAt(i)>='A' && input.charAt(i)<='Z') {
+               c[i] = (char) (c[i] + 32);
+//            }
+        }
+//        for (int i = 0; i < c.length; i++) {
+//            if (c[i]>='A' && c[i]<='Z') {
+//                c[i] = (char) (c[i] + 32);
+//            }
+//
         }
         System.out.println("String is converted to UpperToLower " + String.valueOf(c));
 

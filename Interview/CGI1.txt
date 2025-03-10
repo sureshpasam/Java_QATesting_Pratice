@@ -1,0 +1,35 @@
+
+Qa Automation CGI interview questions
+Selenium WebDriver:
+1 What are different types of locators in Selenium?
+2 When do you use Xpath over CSS locators?
+3 How to get a specific value from a dropdown and reuse it in
+verifications?
+4 When do we use JavaScript Executors?
+5 Is it possible to validate Captcha using Selenium? If yes,
+how?
+6 What should be the ideal way to store data using Selenium
+WebDriver only?
+7 Is it possible to use Xpath like parent/child/node/.. ? If yes,
+provide an example where to use it?
+8 What happens if you receive browser notifications during
+test automation execution?
+9 Why does Stale Element Exception occur, and how to
+handle it?
+10 What is Invalid Certificate Exception?
+APIs:
+1 What are the components of an HTTP request?
+2 What is the difference between API and unit testing?
+3 What is an HTTP response?
+4 How can we add validation points in Postman?
+5 What do you understand by server-side validation?
+6 What is 3-tier architecture?
+7 What is the difference between web services and APIs?
+8 What is REST, SOAP, and GraphQL in APIs?
+9 What do you test in standalone APIs?
+10 What do you test in 3rd-party integrated APIs?
+Postman:
+1 When to use collections, environments, and global variables?
+2 How to execute a collection end-to-end?
+3 How to validate that an API response has the correct status
+code?

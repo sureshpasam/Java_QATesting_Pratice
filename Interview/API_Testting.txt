@@ -1,0 +1,135 @@
+10:46
+Vo
+LTE
+5G
+#OPENTOWORK
+Sourabh QA. 3rd+
+8k+
+2w
++ Follow
+Ex Deloitte | One Goal - Break the
+Scenario-Based API Testing Questions & Answers
+1. Scenario: API Returns Incorrect Data
+Q: You are testing an API that returns user details, but the
+response contains incorrect information. How will you debug
+this issue?
+A:
+Verify the request payload – ensure the correct parameters are
+sent.
+Check the response body – compare it with expected data.
+Validate the database entries – check if the API is fetching the
+correct data.
+Inspect logs - look for errors or incorrect queries in backend
+logs.
+Test with different inputs – confirm if the issue is specific to
+certain data.
+Report to developers with findings and request a fix.
+2. Scenario: API Request Works in Postman but Fails in
+Automation
+Q: Your API request is successful in Postman but fails in
+automated tests. What will you check?
+A:
+Headers & Auth Tokens – Ensure automation scripts include the
+correct authentication and headers.
+Environment Variables - Check if variables (like base URL, API
+keys) are correctly set in automation.
+Rate Limiting - Ensure the API is not blocking automated
+requests due to frequent calls.
+Request Payload Format - Compare the payload in Postman vs.
+automation for any mismatches.
+Timing Issues – Add necessary waits or retries in automation if
+API takes longer to respond.
+
+
+10:46
+Vo
+5G
+LTE
+3. Scenario: API Fails When Load Increases
+Q: Your API works fine with single requests but starts failing
+under high load. How will you test and fix it?
+A:
+Perform Load Testing using tools like JMeter or Gatling.
+Check server logs for timeouts, memory, or connection issues.
+Analyze API response times to identify performance
+bottlenecks.
+Use caching mechanisms to optimize database queries.
+Implement rate limiting and queue mechanisms to handle high
+traffic.
+4. Scenario: API Returns 500 Internal Server Error
+Q: You get a 500 Internal Server Error while testing an API.
+What steps will you take?
+A:
+Verify request payload for missing or incorrect data.
+Check server logs to identify backend issues.
+Test with different inputs to see if the issue is data-specific.
+Validate dependencies – ensure required services/databases are
+running.
+Report with logs and exact test cases for debugging.
+5. Scenario: API Returns 401 Unauthorized Even with Correct
+Credentials
+Q: You send valid credentials, but the API returns 401
+Unauthorized. How do you resolve this?
+A:
+Confirm the authentication method (Basic Auth, Bearer Token,
+OAuth).
+Verify the token is valid and not expired.
+Check if the correct permissions/roles are assigned to the user.
+Ensure the API is expecting the token in the correct header
+
+
+10:46
+Vo
+5G
+LTE
+running.
+Report with logs and exact test cases for debugging.
+5. Scenario: API Returns 401 Unauthorized Even with Correct
+Credentials
+Q: You send valid credentials, but the API returns 401
+Unauthorized. How do you resolve this?
+A:
+Confirm the authentication method (Basic Auth, Bearer Token,
+OAuth).
+Verify the token is valid and not expired.
+Check if the correct permissions/roles are assigned to the user.
+Ensure the API is expecting the token in the correct header
+format.
+Debug using developer logs and check for incorrect
+authentication settings.
+
+1. What is API testing?
+API TESTING
+API testing refers to the process of testing Application Programming Interfaces (APIs) to
+ensure their functionality, reliability, performance, and security.
+2. What are the types of APIs?
+There are several types of APIs, including:
+Web APIs: These APIs are designed for communication over the web and are widely used
+for building web applications. Examples include RESTful APIs, SOAP APIs, and GraphQL
+APIs.
+Operating System APIs: These are used to interact with a device or server's underlying
+operating system. Examples include Windows API, iOS API, and Android API.
+Library APIs: These are used for software development and provide pre-built functions
+and classes for common tasks. Examples include Python's requests library, Java's JDBC
+RESTful API (Representational State Transfer) is an arc
+networked applications. It is based on a set of constrai
+and interoperability.
+5. What is SOAP API?
+SOAP API (Simple Object Access Protocol) is a protoco
+information to implement web services. It uses XML as
+of rules for message exchange, fault handling, and seci
+6. What is the difference between RESTful API and SO
+The main difference between RESTful API and SOAP AF
+message formats. RESTful API follows the principles of
+(REST) and typically uses HTTP methods such as GET, I
+represented in formats like JSON or XML. On the other
+Object Access Protocol (SOAP) and typically relies on:
+predefined methods and strict message structures.
+7. What is an API endpoint?
+An API endpoint refers to a specific URL or URI (Unifor
+a unique resource or service provided by an API. It act:
+send requests and receive responses from an API.
+8. Explain API documentation.
+API documentation is a comprehensive guide that prov
+interact with an API. It typically includes details about
+formats, authentication and authorization methods, er

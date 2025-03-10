@@ -33,8 +33,8 @@ public class RemoveDuplicateCharactersInString {
 	        char[] arr = str.toCharArray();
 	     
 	        for (char ch : arr) {
-	            if (sb.indexOf(String.valueOf(ch)) != -1)
-	                continue;
+	            if (sb.indexOf(String.valueOf(ch)) == -1) {
+				}
 	            else
 	                sb.append(ch);
 	        }

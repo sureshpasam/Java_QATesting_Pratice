@@ -1,0 +1,32 @@
+Key Differences Between Actions Class and Action Interface:
+
+1. Type:
+
+*   Actions is a class.
+*   Action is an interface.
+
+2. Purpose:
+
+*   Actions is used to build a sequence of complex user interactions like mouse movements, clicks, key presses, etc. It supports method chaining.
+*   Action represents a single, executable action and provides the perform() method to execute that action.
+
+3. Methods:
+
+*   Actions includes multiple utility methods like moveToElement(), clickAndHold(), dragAndDrop(), etc.
+*   Action only includes the perform() method.
+
+4. Usage:
+
+*   The Actions class is used to create and configure complex actions and generates Action objects that can be executed.
+*   The Action interface is implemented to execute a specific action.
+
+// Using Actions class
+
+Actions actions = new Actions(driver); 
+
+actions.moveToElement(element).click().build().perform(); // Chaining actions
+
+// Using Action interface
+
+Action action = actions.moveToElement(element).click().build(); 
+// Build returns an Action action.perform(); // Execute the single action

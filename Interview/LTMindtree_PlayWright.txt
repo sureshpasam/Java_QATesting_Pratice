@@ -1,0 +1,7 @@
+1. Write program to find duplicate in integer array. 
+2. Write a program to find frequency of character in a string 
+3. What's the difference between javascript and typescript? 
+3. How do we handling data in playwright? 
+4. What are the exception we get in playwright.
+5. Can we have multiple config file ? 
+6. How can we re-run a failed test case in testng?

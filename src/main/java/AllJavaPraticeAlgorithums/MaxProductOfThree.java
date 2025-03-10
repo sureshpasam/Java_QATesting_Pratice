@@ -62,10 +62,27 @@ each element of array A is an integer within the range [−1,000..1,000].
          */
         return Math.max(A[0] * A[1] * A[N - 1], A[N - 1] * A[N - 2] * A[N - 3]);
     }
+    public int solutionTwo(int[] A){
+        int N = A.length;
+        Arrays.sort(A);
+
+        /**
+         * When we sort an array there are two possible options for the largest product
+         * 1) The largest (the last) three elements
+         * 2) Combination of two smallest and the largest elements
+         * Logic of (1): Obvious
+         * Logic of (2): A pair of negatives multiplied returns a positive, which in combination with
+         * the largest positive element of the array can give the max outcome.
+         * Therefore we return the max of options (1) and (2)
+         */
+        return Math.max(A[0] * A[1] , A[N - 1] * A[N-2]);
+    }
     public static void main(String[] args){
-        int[] A={-3,1,2,-2,5,6};
+        int[] A={10,1,2,7,5,6};
         MaxProductOfThree mp=new MaxProductOfThree();
         System.out.println("MAX Product of Three integer:;"+mp.solution(A));
+        System.out.println("MAX Product of two integer:;"+mp.solutionTwo(A));
+
 
     }
 }

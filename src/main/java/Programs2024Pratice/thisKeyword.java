@@ -1,6 +1,6 @@
 package Programs2024Pratice;
 
-public class thisKeyword {
+public class thisKeyword extends thisKExample{
 
     // usage 1
 
@@ -9,6 +9,7 @@ public class thisKeyword {
     int moneny;
 
     thisKeyword(int id, String name, int moneny) {
+        super(10, "suresh","pasam");
         this.id = id;
         this.name = name;
         this.moneny = moneny;
@@ -25,6 +26,8 @@ public class thisKeyword {
 
     public static void main(String[] args) {
         thisKeyword t = new thisKeyword(10, "Suresh Pasam", 2000);
+        thisKExample tt = new thisKExample(2,"s","p");
+        tt.display();
         t.display();
 
     }

@@ -1,0 +1,66 @@
+8:23
+Vo
+4G
+LTE
+Sri ram Kukkadapu. Following
+QA Engineering Manager @ BT | SAP MII | Selenium | Java | ...
+10h.
+Oracle #InterviewQuestions for #QA role | Exp 4+ Years
+1. Introduce yourself.
+2. Write a test case for the scenario where the search button on
+amazon was not working and you raised an issue.
+3. Write complete steps for navigating to google in selenium?
+4. What is WebDriver ?Interface or class ?
+5. Can't we write Chrome Driver instead of WebDriver and
+why?
+6. Do you know the difference between class and interfaces ?
+7. Why can't we write class logic in the interface instead of
+writing in class implementing it ?
+8. Java program to find second max element from an array ?
+9. Please let us know your participation in developing the
+framework for your project ?
+10. Kindly explain for pojo classes and how to send requests and
+extract responses in API automation ? Write the logic ?
+11. DO you know Jenkins can you build a pipeline ?
+12. Can we use the script to create Jenkins pipeline ?
+13. Write a Linux command to create a file ?
+14. We have table
+EmpID EmpName Salary
+Fetch 2nd and 3rd largest salary of emp with name ?
+8:22
+across different browsers:
+10. How do you handle test data management and data-driven
+testing in your automation projects?
+Round 2:
+1. Explain your experience in designing and implementing
+automation frameworks? what design patterns have you
+utilized and why?
+2. Describe your experience with test driven development and
+behaviour driven development ? How do these methodologies
+influence your
+automation testing practices ?
+3. Have you implemented any strategies for parallel test
+execution in your automation frameworks? How do you ensure
+optimal resource utilization and testing efficiency ?
+4. Can you discuss your experience with integrating automation
+tests into the CI/CD pipeline? How do you ensure fast feedback
+loops and
+reliable test results within a continuous delivery environment?
+5. How do you handle testing of microservices architecture in
+your automation projects ? What challenges have you
+encountered, and how
+did you address them?
+6. Describe your approach to handle non-functional testing
+aspects such as security, performance and accessibility testing
+within your automation frameworks ?
+7. Have you implemented any techniques for automating the
+testing of the mobile application beyond traditional UI
+automation?
+8. How do you ensure comprehensive test coverage in your
+automation suites especially in scenarios involving complex
+logics?
+Round 3:
+1. Tell us something about your achievements ?
+2. Why did you leave your last job?
+3. Salary expectation ?
+J

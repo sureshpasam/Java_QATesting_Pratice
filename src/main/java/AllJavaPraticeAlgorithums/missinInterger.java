@@ -62,6 +62,5 @@ each element of array A is an integer within the range [−1,000,000..1,000,000]
         //int[] A = {1, 3, 6, 4, 2};
         System.out.println("Missing Integer is::" + m.solution(A));
         System.out.println("Missing Integer is soultion 1::" + m.solution1(A));
-
     }
 }

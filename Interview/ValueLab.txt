@@ -1,0 +1,30 @@
+6:01 M
+confluent.io
+23
+Like
+Comment
+Share
+Save
+Suggested
+#OPENTOWORK
+Prince Malik. 3rd+
+Tester
+4d
+:
+
+ValueLabs recently asked interview question for #Automation
+Engineer(8+ years)
+1) Explain OOPS concepts
+2) Why overloading is called complile time polymorphism
+3) What are the new changes from selenium 3 to selenium 4
+4) How do you do actions like click and right click in
+selenium.WAP
+5) How to do a copy paste in selenium. WAP
+6) What language is used in CI/CD pipeline script
+7) Can you write the script for pipeline.
+8) How do you integrate the source code with jenkins
+9) Have you setup pipeline with jenkins
+10) How will you decide on a programming language and tool
+for automation with a challenging client.
+11) What changes have you done in automation framework to
+improve it.

@@ -1,0 +1,29 @@
+Today I gave an interview in LTIMINDTREE for Playwright.
+Write program to find duplicate in integer array.
+Write a program to find frequency of character in a string
+What's the difference between javascript and typescript?
+How do we handling data in playwright?
+What are the exception we get in playwright.
+Can we have multiple config file ?
+How can we re-run a failed test case in testng?
+Interview Exp shared By: Faiyaz Sayeed
+Note: There are other questions as well, but these are
+questions he remembered. DM me to share your interview
+
+------------------------------------------------------------------
+
+
+I had an interview for a Playwright Automation Testing role at
+Wipro, and here are some of the key questions I was asked:
+What are the advantages of Playwright over Selenium?
+How does Playwright handle auto-waiting and retries?
+How to handle authentication pop-ups in Playwright?
+Difference between page.locator() and page.$()?
+How do you perform API testing with Playwright?
+How do you handle async operations in JavaScript?
+How would you implement a custom reporter in Playwright?
+Explain how to integrate Playwright with CI/CD pipelines.
+How do you handle flaky tests in Playwright?
+What are some debugging techniques in Playwright?
+How to handle dynamic elements in Playwright?
+

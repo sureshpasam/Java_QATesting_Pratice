@@ -1,0 +1,300 @@
+11:27
+Top 40 Playwright interview
+Questions & Answers
+Shobika
+Vo
+
+Top 40 Playwright Interview Questions &
+Answers
+1. What is Playwright?
+• Playwright is an open-source automation
+framework for end-end testing, browser
+automation and browser manipulation
+• Supports cross-browser testing and parallel
+testing
+• Supports scripting in multiple programming
+languages
+• Supports platform compatibility
+• Supports network interception
+• Supports Multi-page and Multi-Context
+• Supports headless and headful mode
+2. What are the platforms supported by
+Playwright?
+• CSS Selector
+• XPath
+• Text Content
+• TagName
+• AltText
+• Attribute
+• Label
+• Role
+• Title
+• TestID
+2. What are the platforms supported by
+Playwright?
+• Windows
+• Mac OS
+• Linux
+3. What are the different browsers supported by
+Playwright?
+• Chromium
+• WebKit (Mac)
+• Firefox
+4. What are the different programming
+languages supported by Playwright?
+• JavaScript
+• Typescript
+• JAVA
+• C#
+• Python
+5. What are the different types of locators in
+Playwright?
+Locators are used to identify web elements within
+the webpage.
+• ID
+• Name
+• ClassName
+• CSS Selector
+• XPath
+6. What is the command used to launch a
+browser?
+const browser = await
+chromium.launch(); // launch Chrome
+browser
+const browser = await webkit.launch();
+// launch Safari browser
+const browser
+=
+await
+firefox.launch(); // launch Firefox
+browser
+7. What is the command to launch a URL?
+await
+page.goto('https://letzdotesting'.com)
+;
+8. What is the command used to get the current
+page URL?
+const currentUrl= await page.url();
+9. What is the command to get the webpage title?
+const title = await page.title();
+10. What is the command to type values in a
+textbox?
+await
+page.locator('input[type="text"]').fil
+l('Hello, Letzdotesting!');
+await
+page.locator('input[type="text"]').typ
+e(‘Hello, Letzdotesting!');
+11. What is the command to get the text values ?
+await page.locator('your-
+selector').innerText();
+12. What is the command to clear values in a
+textbox?
+await page.locator('your-
+selector').clear();
+13. What is the command to click a control?
+await page.locator('your-
+selector').click();
+14. What is the command to click on a hyperlink?
+const hyperlink =
+page.locator('a').click();
+15. What is the command to find if an element is
+displayed on a screen?
+await page.locator('your-
+selector').isVisible();
+16. What is the command to verify if a
+checkbox/radio is selected?
+await page.locator('your-
+selector').isChecked();
+17. What is the command to verify if a button is
+enabled?
+await page.locator('your-
+selector').isEnabled();
+18. What is the command to verify if a button is
+disabled?
+19. What is the command to verify if a textbox is
+editable?
+await page.locator('your-
+selector').isEditable();
+20. What is the command to take a screenshot of
+an element?
+await page.locator('your-
+selector').screenshot();
+21. What are the different commands used to
+select a dropdown list?
+await
+page.selectOption('select#dropdownId',
+{ label: 'OptionText' });
+//SelectByVisisbleText
+await
+page.selectOption('select#dropdownId',
+{ index: 2 }); //SelectByIndex
+await
+page.selectOption('select#dropdownId',
+'OptionValue'); //SelectByValue
+22. What are the different commands used to
+deselect a dropdown list?
+22. What are the different commands used to
+deselect a dropdown list?
+Playwright doesn't have a built-in method for
+deselecting options from a dropdown like the
+deselect method in Selenium. However, you can
+achieve a similar effect by reselecting the desired
+options
+23. Name any 4 commonly used Assertions in
+Playwright?
+Playwright, being a tool primarily designed for
+browser automation, does not inherently include
+assertion methods like traditional testing
+frameworks. Assertions are usually part of the
+testing frameworks that you use in combination
+with Playwright.
+When using Playwright with a testing framework
+such as Jest, Mocha, or Jasmine, you typically use
+the assertion methods provided by those
+frameworks. Here are some commonly used
+assertion methods from Jest framework:
+• expect(value).toBe(expected)
+• expect(value).toEqual(expected)
+• expect(value).toBeTruthy()
+• expect(value).toBeFalsy()
+24. What are the different navigation
+commands?
+23. Name any 4 commonly used Assertions in
+Playwright?
+Playwright, being a tool primarily designed for
+browser automation, does not inherently include
+assertion methods like traditional testing
+frameworks. Assertions are usually part of the
+testing frameworks that you use in combination
+with Playwright.
+When using Playwright with a testing framework
+such as Jest, Mocha, or Jasmine, you typically use
+the assertion methods provided by those
+frameworks. Here are some commonly used
+assertion methods from Jest framework:
+• expect(value).toBe(expected)
+• expect(value).toEqual(expected)
+• expect(value).toBeTruthy()
+• expect(value).toBeFalsy()
+24. What are the different navigation
+commands?
+await
+page.goto('https://example.com');
+await page.reload(); // Refresh your
+current page
+await page.goBack(); // Takes one page
+backward based on browser's history
+24. What are the different navigation
+commands?
+await
+page.goto('https://example.com');
+await page.reload(); // Refresh your
+current page
+await page.goBack(); // Takes one page
+backward based on browser's history
+await page.goForward(); // Takes one
+page forward based on browser's
+history
+25. What is the command to right click?
+await page.locator('your-
+selector').contextMenu();
+await page.locator('your-
+selector').click({ button: 'right' });
+26. What is the command to double-click?
+await page.locator('your-
+selector').dblclick();
+27. What is the command used to scroll down to
+
+DOM & returns a single element.
+• locateAll() – Finds all the matching elements in
+the DOM & returns a list of elements.
+31. Write code to close the entire browser.
+browser.close()
+browser
+Used to close entire
+32. Write code to close an individual page or tab
+page.close()
+Used to close
+individual page
+33. What are the different types of waits
+available in Playwright?
+await page.waitForSelector('.my-
+element');
+await page.waitForNavigation();
+await
+page.waitForXPath('//div[@class="my-
+element"]');
+page.waitForTimeOut(2000)
+await page.waitForEvent('response',
+response => response.status()
+===
+200);
+33. What are the different types of waits
+available in Playwright?
+await page.waitForSelector('.my-
+element');
+await page.waitForNavigation();
+await
+page.waitForXPath('//div[@class="my-
+element"]');
+page.waitForTimeOut(2000)
+await page.waitForEvent('response',
+response => response.status()
+200);
+===
+await page.waitForRequest('https://example.c
+om/api/data');
+34. How to handle iFrames?
+const iframe = page.frame({ name:
+'myIframe' }); // Based on name
+await
+page.waitForSelector('iframe[name="myI
+frame"]'); // Based on WebElement
+34. How to handle iFrames?
+const iframe = page.frame({ name:
+'myIframe' }); // Based on name
+await
+page.waitForSelector('iframe[name="myI
+frame"]'); // Based on WebElement
+await page.bringToFront(); // Switch
+back to the main context
+35. Name any three testing frameworks that can
+be integrated with Playwright?
+• Jest
+• Mocha
+• Jasmine
+36. How do you handle touch events in mobile
+emulation with Playwright?
+page.touchscreen.tap()
+37. What software and tools do you need to run
+Playwright in Typescript?
+• Node.js
+• npm (Node Package Manager)
+• Playwright (npm install playwright)
+36. How do you handle touch events in mobile
+emulation with Playwright?
+page.touchscreen.tap()
+37. What software and tools do you need to run
+Playwright in Typescript?
+• Node.js
+• npm (Node Package Manager)
+• Playwright (npm install playwright)
+• Typescript (npm install -g typescript)
+• Visual Studio Code
+38. Name any advanced framework design that
+can be used with Playwright?
+• Cucumber (BDD)
+• Page Object Model
+• Data-driven testing
+• Parallel testing
+• Cross-browser testing
+• Configuration Properties
+• Utilities
+• Tests
+• Logging
+• Reporting
+39. Name any 5 Exceptions that you got while
+working with Playwright
+• NavigationException
+TimeOut Evcontion

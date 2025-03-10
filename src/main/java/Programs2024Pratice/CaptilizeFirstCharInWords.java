@@ -22,7 +22,7 @@ public class CaptilizeFirstCharInWords {
             String afterFirChar = w.substring(0,w.length()-1);
             capUW+=afterFirChar+fcharword.toUpperCase();
         }
-        System.out.println("Captilized the each word of the Fitst Char "+capUW +" "+words.length) ;
+        System.out.println("Captilized the each word of the First Char "+capUW +" "+words.length) ;
     }
 
 

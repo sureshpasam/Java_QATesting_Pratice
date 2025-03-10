@@ -1,0 +1,42 @@
+Selenium & Web Automation
+• How do you handle dynamic web elements?
+• Write the syntax of the Select class and explain its methods.
+• How do you handle iFrames?
+• How do you determine whether an element is an iFrame or
+not?
+• How do you handle mouse actions in Selenium?
+• How do you handle keyboard actions in Selenium?
+• How do you press the ENTER key using the Actions class?
+Write the syntax.
+• How do you use the SHIFT key to type uppercase letters in
+Selenium? Write the syntax.
+• How to handle dynamic elements?
+• How to print all the links from a webpage? Where do you
+store those links?
+• How to check for broken links? How would you validate each
+link if there are 20 links on a page?
+• What is the finally block in Java?
+• Difference between throw and throws?
+• Difference between findElement() and findElements()?
+Cucumber & TestNG
+• Explain your framework structure.
+• How do you perform parallel execution in your framework?
+• What are Cucumber options?
+Git & Version Control
+• Which version control system are you using?
+• If you join a new project, what Git commands do you use
+from start to end? What are the stages you follow? (Write in
+Notepad)
+SQL & Linux
+• Do you have any idea about SQL? Tell me a few queries you
+performed.
+• Do you have any idea about Linux commands?
+
+Scenario-Based Questions
+• You have 3 frames (Frame A, Frame B, Frame C). After
+clicking Frame C, the application opens another tab containing
+a login, password, and sign-in button. Write the Selenium
+automation script for this scenario (in Notepad).
+• If you have 20+ links on a webpage, how would you check if
+each link is valid?
+

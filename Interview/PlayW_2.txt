@@ -1,0 +1,100 @@
+
+Playwright Interview Questions from Auto Desk:
+1) What is the role of Selectors in Playwright and how do they
+differ from Selenium selectors?
+2) How does Playwright handle browser context isolation?
+3) What are the key differences between Page, Frame, and
+Worker in Playwright?
+4) How does Playwright support parallel test execution, and
+how does it differ from Selenium?
+5) Explain how to intercept and mock network requests in
+Playwright.
+6) Techniques for handling authentication in Playwright?
+7) How does Playwright handle multi-tab scenarios?
+8) How to manage browser-specific behaviors in Playwright?
+9) Disadvantages of Playwright?
+
+-------------------------
+✓ What are the Key features of the Playwright test automation
+tool?
+How is Playwright different from other browser automation
+tools like Selenium?
+✓ What are the different testing types the Playwright
+supports?
+What is the difference between fill() and type()?
+What is the default timeout for the playwright page?
+What is the difference between locator() and locateAll()?
+✔ How to locate an element using compound selectors in the
+Playwright Framework?
+
+----------------------------
+Wipro, and here are some of the key questions I was asked:
+What are the advantages of Playwright over Selenium?
+How does Playwright handle auto-waiting and retries?
+How to handle authentication pop-ups in Playwright?
+Difference between page.locator() and page.$()?
+How do you perform API testing with Playwright?
+How do you handle async operations in JavaScript?
+How would you implement a custom reporter in Playwright?
+Explain how to integrate Playwright with CI/CD pipelines.
+How do you handle flaky tests in Playwright?
+What are some debugging techniques in Playwright?
+How to handle dynamic elements in Playwright?
+
+---------------------------------------------------
+
+Describe the error handling mechanisms in Playwright.
+How can you interact with iframes in Playwright?
+Explain how to perform mobile browser testing using
+Playwright.
+What are the best practices for writing maintainable and
+scalable Playwright scripts?
+How do you integrate Playwright into a continuous integration
+(CI) pipeline?
+How do you handle asynchronous operations in Playwright?
+Explain the concept of device emulation in Playwright.
+How can you handle browser permissions in Playwright?
+Explain the concept of page events in Playwright.
+How do you handle browser cookies in Playwright?
+How can you handle page timeouts in Playwright?
+How can you simulate geolocation in Playwright?
+How can you handle multiple browser pages in Playwright?
+How do you simulate touch events in Playwright?
+How can you emulate different network conditions, such as
+slow 3G, in Playwright?
+
+
+---------------------------------------------------
+
+How does Playwright differ from other browser automation
+tools?
+Explain the main components of Playwright.
+How does Playwright handle browser contexts, and why is it
+important?
+What are the advantages of using Playwright over Selenium for
+browser automation?
+How do you set up a new Playwright project?
+Explain the concept of browser launch options in Playwright.
+Provide some examples.
+What are selectors in Playwright, and how are they useful in
+automation scripts?
+How does Playwright handle waiting for elements to appear on
+the page?
+Explain the concept of page objects in Playwright. Why are they
+useful, and how do you implement them?
+Describe the process of handling file uploads and downloads in
+Playwright.
+How does Playwright support parallel test execution?
+What are the headless and headful modes in Playwright, and
+when would you use each?
+How do you handle authentication pop-ups in Playwright?
+Explain how to capture screenshots and videos during test
+execution in Playwright.
+What is the role of the Playwright Test API, and how does it
+enhance testing capabilities?
+
+-----------------------------------------------------
+
+
+
+

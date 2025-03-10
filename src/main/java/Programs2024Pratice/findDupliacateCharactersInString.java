@@ -19,20 +19,21 @@ public class findDupliacateCharactersInString {
 
         }
 //        Set<Character> set = baseMap.keySet();
-//        for (Character ch1 : set) {
-//            if (baseMap.get(ch1) > 1) {
-//                System.out.println("Char is duplicate:: " + ch1 + " -" + baseMap.get(ch1) + " Times");
-//            } else {
-//                System.out.println("Char is ::" + ch1 + "- " + baseMap.get(ch1) + " Times");
-//
-//            }
+        for (char c : ch) {
+            if (baseMap.get(c) > 1) {
+                System.out.println("Char is duplicate:: " + c + " -" + baseMap.get(c) + " Times");
+            } else {
+                System.out.println("Char is ::" + c + "- " + baseMap.get(c) + " Times");
+
+            }
+        }
 //
 //        }
 
-                       System.out.println(" Times"+baseMap);
-
+        System.out.println(" Times" + baseMap);
 
     }
+
 
     public static void main(String[] args) {
         findDupliacateCharactersInString f = new findDupliacateCharactersInString("sureshpasam");

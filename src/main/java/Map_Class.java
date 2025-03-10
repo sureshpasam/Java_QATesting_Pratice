@@ -3,9 +3,17 @@
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Map_Class {
+public class Map_Class extends Immutable_Class {
+
+	public Map_Class(String pancard) {
+		super(pancard);
+	}
 
 	public static void main(String[] args) {
+		Map_Class m = new Map_Class("4832888");
+		System.out.println("Pancard"+m.getpanno());
+
+
 		// TODO Auto-generated method stub
        Integer [] va = {1,5,6,8,10,12,15};
        Arrays.sort(va);

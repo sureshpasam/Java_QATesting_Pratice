@@ -1,0 +1,40 @@
+
+EPAM #Interview #Experience (#Automation #test
+
+> Tell me about yourself and your roles and responsibilities.
+> Write a code for GET http request assuming a pojo class, call
+the methods and check output is success.
+> What is deserialization explain it and where you used it in your
+project
+> write a code to fetch a response (follow up question)
+> what are
+> Difference between Hashmap and Hashtable
+> write a java code scenario: you have 50000 amount in your
+bank account, implement credit and debit amount methods
+and if the debit amount is more throw an user defined
+exception
+> what are the Java 8 features
+> Tell me where and why you used oops concepts in your
+project.Don't define..
+> Can you give examples of functional interfaces
+> what is an interface
+> what is an abstract class Can you instantiate it
+> Can a class be private. follow-up if you want to call that class
+in another package can you do it
+> Tell me Exception hierarchy - follow up -> Tell me some
+examples of checked exceptions you encountered while wen
+automating
+> Did you face any challenges in webautomation
+> Tell me did you find any issues in the system have you
+resolved them if so how did you manage to do
+> Tell me what findings you did while raising a defect
+> Did you do series or parallel testing. How are you executing
+the automation code and asking to build
+> what design pattern you used - answered POM follow-up
+->Explain POM and what are the disadvantages
+> what reporting you used to follow up explains logic and where
+you wrote the code to get the report for so and so tests
+> Did you face any challenges while doing api testing in a
+project
+> Did you use parellel testing how you achieved it
+> Do you have an idea on BDD Cucumber.Give me an overview

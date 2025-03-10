@@ -1,0 +1,151 @@
+11:07
+Vo
+LTE
+
+Playwright Interview Questions :-
+1) Can you list the advantages of using Playwright over other
+testing tools?
+2) What is the concept of "browser context" in Playwright?
+3) How do you implement the Page Object Model (POM) with
+Playwright?
+4) How do you handle iframes, pop-ups, and new windows in
+Playwright?
+5) What are the different types of assertions available in
+Playwright?
+6) How does Playwright manage explicit and implicit waits?
+7) How does Playwright handle API requests and responses?
+8) Can you explain how to mock network requests in
+Playwright?
+9) How do you debug Playwright tests that fail intermittently?
+10) How do you manage test flakiness in Playwright?
+-------------------
+
+How do you handle dynamic content or elements that
+appear after a delay?
+How do you perform API testing with Playwright?
+How do you perform cross-browser testing with Playwright?
+What is the role of browser.newContext() in Playwright?
+How can you test mobile applications using Playwright?
+How do you execute tests in parallel with Playwright?
+How do you interact with iframes in Playwright?
+How do you handle file uploads and downloads in
+Playwright?
+Can you explain how to use Playwright's debugging tools?
+How does Playwright integrate with CI/CD pipelines?
+How do you run Playwright tests on a cloud-based service
+(e.g., BrowserStack, Sauce Labs) ?
+
+-----------------------------
+
+
+Playwright is growing rapidly day by day. Here are some
+important interview questions:
+Playwright Interview Questions
+→ What is Playwright, and how is it different from Selenium?
+What are the main features of Playwright?
+→ How does Playwright handle browser contexts?
+What is the difference between page.click() and
+page.locator().click() in Playwright?
+What are fixtures in Playwright?
+Explain Playwright's auto-wait mechanism.
+How do you handle pop-ups and alerts in Playwright?
+How do you capture screenshots and videos in Playwright?
+What are the advantages of using Playwright over
+Selenium?
+→ How do you handle dynamic content or elements that
+appear after a delay?
+How do you perform API testing with Playwright?
+How do you perform cross-browser testing with Playwright?
+Download started. Check your phone's
+notifications system for the download status.
+X
+How do you execute tests in parallel with Playwright?
+
+-----------------------------
+
+What is the role of Selectors in Playwright and how do they differ from Selenium selectors?
+How does Playwright handle browser context isolation?
+What are the key differences between Page, Frame, and Worker in Playwright?
+How does Playwright support parallel test execution, and how does it differ from Selenium?
+Explain how to intercept and mock network requests in Playwright.
+Techniques for handling authentication in Playwright?
+How does Playwright handle multi-tab scenarios?
+How to manage browser-specific behaviors in Playwright?
+Disadvantages of Playwright?
+
+--------------------------------------------
+
+Here's a sneak peek at some high-impact Playwright interview
+questions:
+✓ What are the key advantages of Playwright over Selenium?
+✔ How do you handle multiple browser contexts and parallel
+execution?
+✔ What strategies can you use to handle flaky tests?
+✔ How do you manage authentication in Playwright test
+automation?
+What is the role of tracing and debugging in Playwright?
+✔ How do you implement API testing with Playwright?
+Mastering these will not only help you ace your interview but
+also make you a stronger automation engineer.
+------------------------------------------------
+
+1. Difference between fill and type methods in Playwright
+fill: Replaces any existing input with new input without delay.
+type: Simulates keypresses, so it's slower and doesn't replace
+existing input.
+2. Assertions in Playwright
+Assertions verify conditions during test execution using the
+expect function:
+Visibility:.toBeVisible(), .toBeHidden()
+Text Content: .toHaveText(), .toHaveValue()
+Attributes/Properties: .toHaveAttribute(), .toHaveCSS()
+Existence: .toExist(), .toHaveCount()
+State: .toBeChecked(), .toBeEnabled(), .toBeDisabled()
+3. Assertion for checkboxes
+Use .toBeChecked() to assert checkbox states.
+4. Handling Multiple Tabs in Playwright
+You can manage multiple tabs by using browser.newPage() to
+open new tabs and interacting with each as separate Page
+objects. To switch tabs, reference the Page object for each tab:
+Open a new tab: browser.newPage()
+Switch between tabs: page.bringToFront()
+Close a tab: page.close()
+5. Handling Lists with nth in Playwright
+Use :nth-child() or :nth-of-type() selectors in CSS or .nth(index)
+in Playwright's Locator API to interact with lists of elements.
+6. Navigating to a URL in Playwright
+Use .goto() to navigate to any page.
+7. Debugging in Playwright
+Run tests in headful mode for Ul visibility.
+Use page.pause() to pause and interact with tests in Playwright
+Inspector.
+Use console.log() for logging, and the --debug flag for detailed
+logs.
+Use .goto() to navigate to any page.
+7. Debugging in Playwright
+Run tests in headful mode for UI visibility.
+Use page.pause() to pause and interact with tests in Playwright
+Inspector.
+Use console.log() for logging, and the --debug flag for detailed
+logs.
+For advanced debugging, connect to DevTools Protocol.
+8. Handling Dynamic Elements
+Dynamic elements change over time. Use waitForSelector() to
+ensure elements are ready before interacting with them:
+Wait for visibility: { state: 'visible' }
+Handle modals/popups: Wait for full load with waitForEvent()
+9. Hooks in Playwright
+Playwright provides hooks for setup/teardown:
+beforeAll(), beforeEach(): Setup before tests.
+afterEach(), afterAll(): Cleanup after tests.
+You can also use fixtures for reusable logic.
+10. Fixtures in Playwright
+Fixtures help manage complex test setups and cleanups,
+making your tests reusable and maintainable. Use built-in or
+custom fixtures:
+Built-in: page, browser, context
+Custom: Create with test.extend()
+Fixtures allow for better organization and reusability across
+tests.
+
+

@@ -1,0 +1,79 @@
+2:59
+
+Core Java Questions
+1. Explain OOPs concepts in detail.
+2. Method overloading vs. method overriding: Why and how?
+3. How do POJO classes demonstrate encapsulation?
+4. What is an interface?
+5. Abstract class vs. interface: In which scenario is each best
+used?
+6. Difference between marker interface and functional interface.
+Use cases?
+7. What is the diamond problem in Java?
+8. What is multithreading? Explain ways to create threads. Can
+you quickly write a multithreaded program?
+9. What are the methods in the Object class?
+10. Can you show how strings are immutable?
+11. What is a lambda expression?
+12. What are the inbuilt functional interfaces in Java?
+13. Streams API: What is it, and how do we use it?
+14. What is the Optional class, and what are its uses?
+15. What is exception handling, and what are its types?
+16. Difference between final, finally, and finalize.
+17. Callable vs. Runnable vs. Future.
+18. volatile vs. transient keywords.
+19. Given List<Integer> list = Arrays.asList(2, 3, 4, 5, 6, 7, 8, 9):
+-> Filter out all even numbers.
+-> Divide all filtered numbers by 2.
+-> Print the sum.
+20. Can we write a finally block without a catch block?
+
+How to execute multiple Test cases at a time in TestNG?
+
+Which method allows you to change control from one window to other?
+
+Which annotations executed first?
+
+Which open source tolls allows us to read and write Ms Excel file using Java?
+
+How many types of XPath are there in selenium?
+
+In selenium 4,which of the following method allows us to take screenshot of a specific web element?
+
+Which language use in gherkins?
+
+When you only want to access a single element on a webpage which method will you use?
+
+Which class is used for drop-down in selenium?
+
+Which component of selenium is most important?
+
+Which keywords use in gherkins?
+
+How many locators does selenium has?
+
+Which exception is shown in selenium when there is a delay in the loading time of the elements with which we are interacting?
+
+Write correct syntax for absolute path
+
+What is Ui testing?
+
+Which XPath search dissimilar nodes in XML document from the current node
+
+What do you mean by open source software
+
+Which of following browser support selenium?
+
+Which method are present in POM to locate webelement?
+
+Which type of wait command waits for a certain amount of time before it throws an exception?
+
+Which tool you will use to manage and organised jar and lib in automation?
+
+Which type of XPath start with a double forward slash?
+
+Which type of XPath start with a single forward slash?
+
+How many types of wait commands does the selenium web driver provide?
+
+

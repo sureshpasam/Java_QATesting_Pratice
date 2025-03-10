@@ -1,0 +1,31 @@
+handle it is not supported
+Playwright Exceptions
+<> TimeoutError:
+This occurs when an operation does not complete within the
+specified timeout
+<> SelectorError:
+Arises when a provided selector does not match any elements
+<> PageError:
+Represents errors related to actions or interactions with a page
+<> FrameError:
+Occurs when dealing with frames or iframes and an operation
+cannot be executed
+<> RequestFailedError:
+Represents failures in network requests or response handling
+<> RouteHandlerError:
+Represents errors when handling routes or intercepting
+network requests
+<> BrowserContext Error:
+Arises when there are issues related to browser contexts, such
+as creating or manipulating them
+<> BindingCallError:
+Occurs when there are issues with function calls or bindings
+within the Playwright API
+<> WorkerError:
+Represents errors occurring within workers or threads in
+Playwright's execution environment
+
+-----------------------------------
+
+
+↑

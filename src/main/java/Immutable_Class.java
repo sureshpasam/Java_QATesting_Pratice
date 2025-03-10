@@ -2,9 +2,9 @@
 
 
 
-public final class Immutable_Class {
+public class Immutable_Class {
 	
-	final String pancard;
+	private String pancard;
 	
 	public Immutable_Class(String pancard) {
 		this.pancard =pancard;

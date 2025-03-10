@@ -1,0 +1,75 @@
+
+1st Round
+1. Compress string: Input aaabbccca, output 4a2b3c
+2. Pass request specification in API testing
+3. OOPS: Abstract class vs Interface (scenario-based)
+4. Get XPath for all links under "Gaming Accessories" on
+Amazon (except "See More")
+5. Get XPath for Nintendo product
+6. Handle dropdown with 100 options, displaying 10 at a time,
+requiring scrolling
+Data handling approach
+7. Interaction with Selenium WebDriver
+8. Data handling approach
+9. Find the 2nd child element using Selenium
+10. Intraction with selenium webdriver
+11. Can Selenium WebDriver be used without APIs in Java?
+12. Common exceptions encountered; write a sample code
+Select "June" from a 12-month dropdown; best WAIT
+mechanism?
+13. Use of extract method in framework
+14. Serialization vs Deserialization
+15. Static variable & Static keyword
+
+2nd Round
+1. HTTP errors: 4xx (client-side), 5xx (server-side)
+2. Cucumber: Feature file vs Scenario
+3. @TestStep annotation in Cucumber
+4. How to do execute the failed scenarios in the cucumber framework
+3. Example of Scenario Outline
+4. Exclude test cases in Cucumber
+5. Regression testing frequency
+6. SQL: Fetch employees without projects
+7. Left, Right, Inner Join differences
+8. ISO20022 message types & usage
+9. Mutable vs Immutable in Java
+10. Use cases of Mutable & Immutable
+11. API Automation: RestAssured vs Postman
+12. API testing framework used
+
+5:50
+Vo
+LTE
+5G
+2. Cucumber: Feature Tile vs Scenario
+3. Example of Scenario Outline
+4. Exclude test cases in Cucumber
+5. Regression testing frequency
+6. SQL: Fetch employees without projects
+7. Left, Right, Inner Join differences
+8. ISO20022 message types & usage
+9. Mutable vs Immutable in Java
+10. Use cases of Mutable & Immutable
+11. API Automation: RestAssured vs Postman
+12. API testing framework used
+13. Data generation & validation in API testing
+14. API authentication techniques
+15. RESTful vs SOAP services
+16. Can GET replace PUT for resource creation?
+17. API framework utilities;
+18. Schema validation approach
+19. Jenkins: How do you trigger test cases?
+20. Code: Duplicate keys in a new HashMap
+21. Code: Synchronize a thread
+Lambda expressions & Streams usage
+22. Java code: Separate alphabets & numbers
+23. Java code: Print pattern:
+123*
+12*4
+1*34
+*234
+24. SQL: Pick a random DB record
+25. SQL: Fetch records where provisionType = 'suspend' (T1
+with mapld as PK, T2 with provisionld as PK)
+26. API test case for Amazon UPI verification with govt. server
+3rd Round

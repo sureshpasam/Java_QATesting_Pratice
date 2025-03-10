@@ -32,7 +32,7 @@ System.out.print("method"+ Arrays.toString(r));
         }
         for (int i =0;i< fre.length;i++){
             if(fre[i] != visit) {
-                System.out.println("No of occurence in the each value::" + arr[i] + "   Fregquency::" + fre[i]);
+                System.out.println("No of occurence in the each value:: " + arr[i] + "   Fregquency:: " + fre[i]);
             }
         }
     }

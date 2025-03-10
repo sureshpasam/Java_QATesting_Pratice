@@ -1,7 +1,7 @@
 package Programs2024Pratice;
 
 public class thisKExample {
-    int no;
+    private int no;
     String name, course;
     float fee;
 

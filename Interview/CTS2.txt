@@ -1,0 +1,72 @@
+
+Round 1
+1. Tell me something about yourself?
+2. Explain Automation Testing Framework?
+3. Explain agile processes and day-to-day activities ?
+4. How did you push and pull your code to the remote ?
+5. Can we use another framework instead of just pom?
+6. Explain the difference between implicit wait and explicit
+wait ?
+7. Have you written an automation script? It runs sometimes
+and sometimes it gets stuck. What may be the reason and how
+do you solve this?
+8. Absolute XPath vs Relative XPath? Which is preferred. Which
+is preferred to be used and why ?
+9. Suppose there are two login buttons, one in the header and
+2nd on the footer. Both have the same property ? How do we
+access the 2nd Login button using XPath ?
+10. The difference between method overload and method
+overriding?
+11. When to use implicit wait and when to use explicit wait ?
+12. How do you cover end to end API testing?
+13. What are the exceptions faced while API testing?
+14. How do you modify JSON data and also provide
+authentication for an API request ? Explain different status code
+like 500,201,403 ?
+Round 2
+1. Can you explain your project ?
+2. Write a program to reverse each word in a String ?
+3. Write a program to find duplicate words in string ?
+4. Write a program to retrieve excel data ?
+5. There is a web table with 3 columns and 4 rows. Find 2nd
+column rows to be sorted and get the 4th row value ?
+6. Write steps to connect to db and retrieve data from db?
+7. Explain oops concepts ?
+8. What is maven and how do you use it in your project ?
+9. What is the page object model? How are you using it in the
+project?
+10. How do you take a screenshot of the failed test case ?
+11. What is retesting and regression testing?
+9. Suppose there are two login buttons, one in the header and
+2nd on the footer. Both have the same property ? How do we
+access the 2nd Login button using XPath ?
+10. The difference between method overload and method
+overriding ?
+11. When to use implicit wait and when to use explicit wait ?
+12. How do you cover end to end API testing?
+13. What are the exceptions faced while API testing?
+14. How do you modify JSON data and also provide
+authentication for an API request ? Explain different status code
+like 500,201,403 ?
+Round 2
+1. Can you explain your project ?
+2. Write a program to reverse each word in a String ?
+3. Write a program to find duplicate words in string ?
+4. Write a program to retrieve excel data ?
+5. There is a web table with 3 columns and 4 rows. Find 2nd
+column rows to be sorted and get the 4th row value ?
+6. Write steps to connect to db and retrieve data from db?
+7. Explain oops concepts ?
+8. What is maven and how do you use it in your project?
+9. What is the page object model? How are you using it in the
+project?
+10. How do you take a screenshot of the failed test case ?
+11. What is retesting and regression testing?
+12. How do you debug your code manually or use any
+automation for that ?
+13. Explain Join in SQL ?
+Round 3
+1. Tell us 3 best things about your previous organization ?
+2. Why are you looking for a change ?
+3. What did you like most in your previous job?
+4. Where do you see yourself in the next 5 years?
