@@ -8,7 +8,7 @@ public class CountOfCharDigitsSplChars {
         int digits = 0;
         int other = 0;
         //char[] ch = s.toCharArray();
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < totalInput; i++) {
             char c = s.charAt(i);
             if (Character.isUpperCase(c)) {
                 upperCase++;
