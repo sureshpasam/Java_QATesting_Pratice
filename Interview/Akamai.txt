@@ -9,6 +9,8 @@ Output:
 Index: 4
 
 2. How would you explain the value of automation to a non-technical stakeholder?
+3. Describe a situation where you had to work with a difficult team member. How did you handle it?
+4. How do you ensure that your test cases are maintainable and reusable?
 
 3. Can you describe a time when you improved a process that significantly impacted your team's efficiency?
 

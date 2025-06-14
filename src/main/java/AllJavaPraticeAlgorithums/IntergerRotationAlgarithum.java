@@ -37,13 +37,12 @@ each element of array A is an integer within the range [−1,000..1,000].
 In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment. */
 
     public int[] rotation(int[] A, int K){
+
         for (int i=0;i<A.length-1;i++) {
             int destIndex = (i * K + K) % A.length;
             int destValue = A[destIndex];
             A[destIndex] = A[0];
             A[0] = destValue;
-
-
         }
         return A;
     }

@@ -29,7 +29,6 @@ public class RestAssured {
         System.out.println("Captured the id from the Post call " + id);
        // System.out.println("Captured the id from the Post call " + s.jsonPath().get());
 
-
     }
 
     @Test(priority = 3, dependsOnMethods = "createUser")

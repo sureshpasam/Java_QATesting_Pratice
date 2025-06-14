@@ -18,7 +18,7 @@ public class RA_Day2 {
     // First approch
     @Test(priority = 1)
     void testPostUsingHashMapApproch() {
-        HashMap data = new HashMap();
+        HashMap data = new HashMap<>();
         data.put("name", "suresh");
         data.put("location", "hyd");
         data.put("phone", "9703533390");

@@ -37,7 +37,7 @@ each element of array A is an integer within the range [1..(N + 1)].*/
 
 
     public static void main(String[] args) {
-        int[] A = {1,3,2, 6, 4,5,7,8};
+        int[] A = {1,3,2,4,5,7,8};
         Findthemissingelementinagivenpermutation_GivenArray ff = new Findthemissingelementinagivenpermutation_GivenArray();
         int B = ff.solution(A);
         System.out.println("Missing value of the given array::" + B);
